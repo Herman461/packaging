@@ -33,6 +33,59 @@ window.addEventListener('DOMContentLoaded', function() {
         })
 
     }
+    const formatSliders = document.querySelectorAll('.slider-product-format__items')
+    if (formatSliders.length > 0) {
+        for (let index = 0; index < formatSliders.length; index++) {
+            const slider = formatSliders[index]
+
+            if (slider.classList.contains('slider-product-format__items_child')) {
+                const sliderEl = new Swiper(slider, {
+                    spaceBetween: 15,
+                    slidesPerView: 6,
+                    loop: true,
+                    speed: 800,
+                    breakpoints: {
+
+                    },
+                    navigation: {
+                        nextEl: slider.closest('.body-product-format__slider').querySelector('.slider-product-format__button-next'),
+                        prevEl: slider.closest('.body-product-format__slider').querySelector('.slider-product-format__button-prev')
+                    },
+                })
+            } else if (slider.classList.contains('slider-product-format__items_wine')) {
+                const sliderEl = new Swiper(slider, {
+                    spaceBetween: 15,
+                    slidesPerView: 3,
+                    loop: true,
+                    speed: 800,
+                    breakpoints: {
+
+                    },
+                    navigation: {
+                        nextEl: slider.closest('.body-product-format__slider').querySelector('.slider-product-format__button-next'),
+                        prevEl: slider.closest('.body-product-format__slider').querySelector('.slider-product-format__button-prev')
+                    },
+                })
+            }
+            else {
+                const sliderEl = new Swiper(slider, {
+                    spaceBetween: 15,
+                    slidesPerView: 5,
+                    loop: true,
+                    speed: 800,
+                    breakpoints: {
+
+                    },
+                    navigation: {
+                        nextEl: slider.closest('.body-product-format__slider').querySelector('.slider-product-format__button-next'),
+                        prevEl: slider.closest('.body-product-format__slider').querySelector('.slider-product-format__button-prev')
+                    },
+                })
+            }
+
+        }
+    }
+
     // Меню
 
     // const menu = document.querySelector('.header__menu')
