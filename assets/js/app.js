@@ -42,7 +42,7 @@ window.addEventListener('DOMContentLoaded', function() {
         const formatWaysSlider = new Swiper('.format-ways__slider', {
             spaceBetween: 16,
             slidesPerView: 2,
-            // loop: true,
+
             speed: 800,
             breakpoints: {
                 767.98: {
@@ -64,7 +64,8 @@ window.addEventListener('DOMContentLoaded', function() {
             pagination: {
                 el: ".format-ways__dots",
                 dynamicBullets: true,
-                dynamicMainBullets: 4
+                dynamicMainBullets: 4,
+                clickable: true,
             },
             navigation: {
                 nextEl: '.format-ways__button-next',
@@ -76,11 +77,31 @@ window.addEventListener('DOMContentLoaded', function() {
     if (document.querySelector('.package-more__slider')) {
         const packageMoreSlider = new Swiper('.package-more__slider', {
             spaceBetween: 16,
-            slidesPerView: 7,
-            loop: true,
+            slidesPerView: 2,
+            autoplay: {
+                delay: 3000,
+            },
             speed: 800,
             breakpoints: {
+                991.98: {
+                    slidesPerView: 7,
+                },
+                767.98: {
+                    slidesPerView: 5,
+                },
+                600.98: {
+                    slidesPerView: 4,
+                },
+                460.98: {
+                    slidesPerView: 3,
+                },
 
+            },
+            pagination: {
+                el: document.querySelector('.package-more__dots'),
+                dynamicBullets: true,
+                dynamicMainBullets: 4,
+                clickable: true,
             },
             navigation: {
                 nextEl: '.package-more__button-next',
@@ -97,40 +118,86 @@ window.addEventListener('DOMContentLoaded', function() {
             if (slider.classList.contains('slider-product-format__items_child')) {
                 const sliderEl = new Swiper(slider, {
                     spaceBetween: 15,
-                    slidesPerView: 6,
-                    loop: true,
+                    slidesPerView: 2,
+                    autoplay: {
+                        delay: 3000,
+                    },
                     speed: 800,
                     breakpoints: {
+                        991.98: {
+                            slidesPerView: 6,
+                        },
+                        767.98: {
+                            slidesPerView: 5,
+                        },
+                        600.98: {
+                            slidesPerView: 4,
+                        },
+                        460.98: {
+                            slidesPerView: 3,
+                        },
 
                     },
                     navigation: {
                         nextEl: slider.closest('.body-product-format__slider').querySelector('.slider-product-format__button-next'),
                         prevEl: slider.closest('.body-product-format__slider').querySelector('.slider-product-format__button-prev')
+                    },
+                    pagination: {
+                        el: slider.closest('.body-product-format__slider').querySelector('.slider-product-format__dots'),
+                        dynamicBullets: true,
+                        dynamicMainBullets: 4,
+                        clickable: true,
                     },
                 })
             } else if (slider.classList.contains('slider-product-format__items_wine')) {
                 const sliderEl = new Swiper(slider, {
                     spaceBetween: 15,
-                    slidesPerView: 3,
-                    loop: true,
+                    slidesPerView: 2,
+                    autoplay: {
+                        delay: 3000,
+                    },
                     speed: 800,
                     breakpoints: {
-
+                        460.98: {
+                            slidesPerView: 3,
+                        },
                     },
                     navigation: {
                         nextEl: slider.closest('.body-product-format__slider').querySelector('.slider-product-format__button-next'),
                         prevEl: slider.closest('.body-product-format__slider').querySelector('.slider-product-format__button-prev')
+                    },
+                    pagination: {
+                        el: slider.closest('.body-product-format__slider').querySelector('.slider-product-format__dots'),
+                        dynamicBullets: true,
+                        dynamicMainBullets: 4,
+                        clickable: true,
                     },
                 })
             }
             else {
                 const sliderEl = new Swiper(slider, {
                     spaceBetween: 15,
-                    slidesPerView: 5,
-                    loop: true,
+                    slidesPerView: 2,
+                    autoplay: {
+                        delay: 3000,
+                    },
                     speed: 800,
                     breakpoints: {
-
+                        767.98: {
+                            slidesPerView: 5,
+                        },
+                        600.98: {
+                            slidesPerView: 4,
+                        },
+                        460.98: {
+                            slidesPerView: 3,
+                        },
+                    },
+                    pagination: {
+                        el: slider.closest('.body-product-format__slider').querySelector('.slider-product-format__dots'),
+                        dynamicBullets: true,
+                        dynamicMainBullets: 4,
+                        clickable: true,
                     },
                     navigation: {
                         nextEl: slider.closest('.body-product-format__slider').querySelector('.slider-product-format__button-next'),
@@ -142,6 +209,42 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+
+    const capSliders = document.querySelectorAll('.modal-cap__slider')
+    if (capSliders.length > 0) {
+        for (let index = 0; index < capSliders.length; index++) {
+            const slider = capSliders[index]
+
+            const sliderEl = new Swiper(slider, {
+                spaceBetween: 15,
+                slidesPerView: 2,
+                autoplay: {
+                    delay: 3000,
+                },
+                speed: 800,
+                breakpoints: {
+                    991.98: {
+                        slidesPerView: 4,
+                    },
+                    460.98: {
+                        slidesPerView: 3,
+                    },
+
+                },
+                navigation: {
+                    nextEl: slider.closest('.modal-cap__bottom').querySelector('.modal-cap__button-next'),
+                    prevEl: slider.closest('.modal-cap__bottom').querySelector('.modal-cap__button-prev')
+                },
+                pagination: {
+                    el: slider.closest('.modal-cap__bottom').querySelector('.modal-cap__dots'),
+                    dynamicBullets: true,
+                    dynamicMainBullets: 4,
+                    clickable: true,
+                },
+            })
+
+        }
+    }
     // Меню
 
     // const menu = document.querySelector('.header__menu')

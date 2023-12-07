@@ -400,6 +400,49 @@ if (tabContent.length > 0)  {
 	});
 
 }
+// Модальные окна
+window.addEventListener('click', function(e) {
+	if (e.target.closest('[data-modal-link]')) {
+		const link = e.target.closest('[data-modal-link]')
+		e.preventDefault()
+		const scrollWidth = window.innerWidth - document.body.clientWidth
+
+		const modalTitle = '#' + link.dataset.modalLink
+
+		document.querySelector(modalTitle).classList.add('active')
+
+		document.body.classList.add('lock')
+
+		document.body.style.paddingRight = scrollWidth + 'px'
+	}
+
+	if (e.target.closest('[data-modal-close]')) {
+		e.preventDefault()
+		const closeButton = e.target.closest('[data-modal-close]')
+		closeButton.closest('.modal').classList.remove('active')
+		if (closeButton.closest('.modal').querySelector('video')) {
+			closeButton.closest('.modal').querySelector('video').pause()
+			closeButton.closest('.modal').querySelector('video').currentTime = 0
+		}
+		closeButton.closest('.modal').classList.remove('active')
+		document.body.classList.remove('lock')
+		setTimeout(() => {
+
+			document.body.style.paddingRight = 0
+		}, 300)
+	}
+
+	if (e.target.closest('.modal')) {
+		if (!e.target.closest('.modal__content')) {
+			e.target.closest('.modal').classList.remove('active')
+
+			setTimeout(() => {
+				document.body.classList.remove('lock')
+				document.body.style.paddingRight = 0
+			}, 400)
+		}
+	}
+})
 
 function openTabs(el) {
 	el.preventDefault()
