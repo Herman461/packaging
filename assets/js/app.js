@@ -1,6 +1,14 @@
 const delay = 400
 
 window.addEventListener('DOMContentLoaded', function() {
+    // const animElements = document.querySelectorAll('.anim-start')
+    // if (animElements.length > 0) {
+    //     console.log('dsdsdsd')
+    //     for (let index = 0; index < animElements.length; index++) {
+    //         const animElement = animElements[index]
+    //         animElement.classList.add('active')
+    //     }
+    // }
     if (document.querySelector('.block-package-composition__image')) {
         const elements = document.querySelectorAll('.block-package-composition__image .cls-2')
         for (let index = 0; index < elements.length; index++) {
@@ -402,6 +410,11 @@ window.addEventListener('DOMContentLoaded', function() {
                 }
             }
         }
+        window.addEventListener('click', function(e) {
+            if (e.target.closest('[data-tab-title]')) {
+                animOnScroll()
+            }
+        })
         function offset(el) {
             const rect = el.getBoundingClientRect();
             const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
