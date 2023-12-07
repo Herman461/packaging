@@ -6196,7 +6196,7 @@ body {
   cursor: pointer;
   position: relative;
   z-index: 4;
-  fill: #F1F1F1;
+  fill: rgba(0, 0, 0, 0);
 }
 
 .block-package-composition__image .cls-2.active {
