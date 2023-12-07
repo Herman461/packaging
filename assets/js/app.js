@@ -1,11 +1,48 @@
 const delay = 400
 
 window.addEventListener('DOMContentLoaded', function() {
+    if (document.querySelector('.block-package-composition__image')) {
+        const elements = document.querySelectorAll('.block-package-composition__image .cls-2')
+        for (let index = 0; index < elements.length; index++) {
+            const element = elements[index]
+
+
+
+
+            element.addEventListener('mouseenter', function(e) {
+                if (element.classList.contains('active')) return
+
+                const title = element.dataset.tabTitle;
+                const category = element.dataset.tabCategory
+
+                const tabContent = document.querySelectorAll(`[data-tab-content][data-tab-category="${category}"]`);
+                const tabLinks = document.querySelectorAll(`[data-tab-title][data-tab-category="${category}"]`);
+
+                tabContent.forEach(function(el) {
+                    el.classList.remove("active");
+                });
+
+                tabLinks.forEach(function(el) {
+                    el.classList.remove("active");
+                });
+
+                const activeContent = document.querySelectorAll(`[data-tab-content="${title}"][data-tab-category="${category}"]`)
+
+                activeContent.forEach(function(el) {
+                    el.classList.add('active')
+                })
+                document.querySelector(`[data-tab-content="${title}"]`).classList.add("active");
+
+                element.classList.add("active");
+            })
+        }
+    }
+
     if (document.querySelector('.format-ways__slider')) {
         const formatWaysSlider = new Swiper('.format-ways__slider', {
             spaceBetween: 16,
             slidesPerView: 2,
-            loop: true,
+            // loop: true,
             speed: 800,
             breakpoints: {
                 767.98: {
@@ -20,6 +57,9 @@ window.addEventListener('DOMContentLoaded', function() {
                 430.98: {
                     slidesPerView: 3,
                 }
+            },
+            autoplay: {
+                delay: 3000,
             },
             pagination: {
                 el: ".format-ways__dots",
