@@ -4,11 +4,27 @@ window.addEventListener('DOMContentLoaded', function() {
     if (document.querySelector('.format-ways__slider')) {
         const formatWaysSlider = new Swiper('.format-ways__slider', {
             spaceBetween: 16,
-            slidesPerView: 6,
+            slidesPerView: 2,
             loop: true,
             speed: 800,
             breakpoints: {
-
+                767.98: {
+                    slidesPerView: 6,
+                },
+                600.98: {
+                    slidesPerView: 5,
+                },
+                500.98: {
+                    slidesPerView: 4,
+                },
+                430.98: {
+                    slidesPerView: 3,
+                }
+            },
+            pagination: {
+                el: ".format-ways__dots",
+                dynamicBullets: true,
+                dynamicMainBullets: 4
             },
             navigation: {
                 nextEl: '.format-ways__button-next',
@@ -219,4 +235,38 @@ window.addEventListener('DOMContentLoaded', function() {
 
     // window.addEventListener('scroll', fixHeader)
 
+    const animItems = document.querySelectorAll('.anim-items');
+
+    if (animItems.length > 0) {
+        window.addEventListener('scroll', animOnScroll);
+        function animOnScroll() {
+            for (let index = 0; index < animItems.length; index++) {
+                const animItem = animItems[index];
+                const animItemHeight = animItem.offsetHeight;
+                const animItemOffset = offset(animItem).top;
+                const animStart = 10;
+
+                let animItemPoint = window.innerHeight - animItemHeight / animStart;
+                if (animItemHeight > window.innerHeight) {
+                    animItemPoint = window.innerHeight - window.innerHeight / animStart;
+                }
+
+                if (
+                    pageYOffset > animItemOffset - animItemPoint &&
+                    pageYOffset < animItemOffset + animItemHeight
+                ) {
+                    animItem.classList.add('active');
+                }
+            }
+        }
+        function offset(el) {
+            const rect = el.getBoundingClientRect();
+            const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
+        }
+        setTimeout(() => {
+            animOnScroll();
+        }, 400);
+    }
 })
