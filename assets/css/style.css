@@ -11367,6 +11367,13 @@ body {
     flex: 1 1 auto;
     padding-left: 64px;
   }
+
+  .product-process__row_first {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
 }
 
 @media (min-width: 991.98px) and (min-width: 991.98px) {
