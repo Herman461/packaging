@@ -5199,6 +5199,8 @@ textarea.autoheight {
 
 body {
   background: #F1F1F1;
+  -webkit-font-feature-settings: "ss01" on, "salt" on, "liga" off;
+  font-feature-settings: "ss01" on, "salt" on, "liga" off;
 }
 
 * {
@@ -5511,6 +5513,16 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 115%;
+}
+
+.item-design-about__label {
+  color: #003DA6;
+  margin-top: 16px;
+  font-family: Cera;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  font-size: 20px;
 }
 
 .design-ways {
@@ -8860,6 +8872,102 @@ body {
   width: 56px;
 }
 
+.marketing {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.marketing__title {
+  margin-bottom: 160px;
+}
+
+.marketing__block {
+  margin-bottom: 160px;
+}
+
+.marketing__block_reverse {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: reverse !important;
+  -ms-flex-direction: row-reverse !important;
+  flex-direction: row-reverse !important;
+}
+
+.marketing__block_reverse .block-marketing__image {
+  margin-right: 0 !important;
+  margin-left: 30px;
+}
+
+.block-marketing__image {
+  margin-right: 30px;
+}
+
+.block-marketing__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+  object-position: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.block-marketing__title {
+  font-size: 56px;
+  margin-bottom: 40px;
+}
+
+.block-marketing__text {
+  color: #444;
+  margin-bottom: 40px;
+  font-family: Cera;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.block-marketing__text p {
+  margin-bottom: 20px;
+}
+
+.block-marketing__text p:last-child {
+  margin: 0;
+}
+
+.block-marketing__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -12px 40px;
+}
+
+.block-marketing__column {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 50%;
+  flex: 0 1 50%;
+  padding: 0 12px;
+}
+
+.block-marketing__list {
+  margin-bottom: 40px;
+}
+
+.block-marketing__list:last-child {
+  margin: 0;
+}
+
+.block-marketing__list li {
+  color: #003DA6;
+  margin-bottom: 20px;
+}
+
+.block-marketing__list li::before {
+  background: #003DA6;
+}
+
+.block-marketing__list li:last-child {
+  margin: 0;
+}
+
 @media (min-width: 576.98px) {
   .design-about__items {
     display: -webkit-box;
@@ -11374,6 +11482,31 @@ body {
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
   }
+
+  .block-marketing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .block-marketing__image {
+    max-width: 673px;
+    width: 100%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+
+  .block-marketing__content {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    max-width: 670px;
+    width: 100%;
+  }
 }
 
 @media (min-width: 991.98px) and (min-width: 991.98px) {
@@ -12479,6 +12612,10 @@ body {
 }
 
 @media (min-width: 1240.98px) {
+  .design-about__items_f .item-design-about__text {
+    font-size: 26px !important;
+  }
+
   .format-products__item {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 16.666%;
@@ -12604,6 +12741,18 @@ body {
 
   .design-about__main {
     padding-right: 144px;
+  }
+
+  .design-about__image {
+    height: 100%;
+  }
+
+  .design-about__image img {
+    height: 100%;
+  }
+
+  .intro__text_b {
+    margin-bottom: 84px !important;
   }
 
   .design-ways__main {
@@ -13705,6 +13854,10 @@ body {
     font-size: calc(15px + 13 * (100vw - 320px) / 1550);
   }
 
+  .item-design-about__label {
+    font-size: calc(15px + 5 * (100vw - 320px) / 1550);
+  }
+
   .design-ways {
     padding-top: calc(80px + 80 * (100vw - 320px) / 1550);
   }
@@ -14775,6 +14928,34 @@ body {
 
   .item-automation__icon img {
     width: calc(40px + 16 * (100vw - 320px) / 1550);
+  }
+
+  .marketing {
+    padding-top: calc(80px + 80 * (100vw - 320px) / 1550);
+  }
+
+  .marketing {
+    padding-bottom: calc(80px + 80 * (100vw - 320px) / 1550);
+  }
+
+  .marketing__title {
+    margin-bottom: calc(80px + 80 * (100vw - 320px) / 1550);
+  }
+
+  .marketing__block {
+    margin-bottom: calc(80px + 80 * (100vw - 320px) / 1550);
+  }
+
+  .block-marketing__title {
+    font-size: calc(28px + 28 * (100vw - 320px) / 1550);
+  }
+
+  .block-marketing__title {
+    margin-bottom: calc(24px + 16 * (100vw - 320px) / 1550);
+  }
+
+  .block-marketing__text {
+    font-size: calc(15px + 5 * (100vw - 320px) / 1550);
   }
 }
 
