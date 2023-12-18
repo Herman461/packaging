@@ -255,30 +255,30 @@ window.addEventListener('DOMContentLoaded', function() {
     }
     // Меню
 
-    // const menu = document.querySelector('.header__menu')
-    // const header = document.querySelector('.header')
-    // let lock = false
-    // const burger = document.querySelector('.header__burger')
-    //
-    // burger.addEventListener('click', function() {
-    //
-    //     if (lock) return
-    //
-    //     lock = true
-    //
-    //     toggleMenu()
-    //
-    //     setTimeout(() => {
-    //         lock = false
-    //     }, delay)
-    // })
-    //
-    // function toggleMenu() {
-    //     burger.classList.toggle('active')
-    //     menu.classList.toggle('active')
-    //     header.classList.toggle('active')
-    //     lockBody()
-    // }
+    const menu = document.querySelector('.base-header')
+
+    let lock = false
+    const burger = document.querySelector('.hamburger-mobile')
+
+    burger.addEventListener('click', function() {
+
+        if (lock) return
+
+        lock = true
+
+        toggleMenu()
+
+        setTimeout(() => {
+            lock = false
+        }, delay)
+    })
+
+    function toggleMenu() {
+        burger.classList.toggle('active')
+        menu.classList.toggle('active')
+
+        lockBody()
+    }
 
 
     function lockBody() {

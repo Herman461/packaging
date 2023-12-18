@@ -205,6 +205,9 @@ if (spoilersArray.length > 0) {
 		}
 	}
 	function setSpoilerAction(e) {
+		if (e.target.closest('.base-header__link')) {
+			return
+		}
 		const el = e.target;
 		if (el.hasAttribute('data-spoiler') || el.closest('[data-spoiler]')) {
 			const spoilerTitle = el.hasAttribute('data-spoiler') ? el : el.closest('[data-spoiler]');
@@ -218,6 +221,8 @@ if (spoilersArray.length > 0) {
 				slideToggle(spoilerTitle.nextElementSibling, 500)
 			}
 			e.preventDefault();
+
+
 		}
 	}
 	function hideSpoilerBody(spoilersBlock) {
