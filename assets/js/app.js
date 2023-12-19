@@ -10,15 +10,54 @@ window.addEventListener('DOMContentLoaded', function() {
     //     }
     // }
     if (document.querySelector('.block-package-composition__image')) {
-        const elements = document.querySelectorAll('.block-package-composition__image .cls-2')
+        const elements = Array.from(document.querySelectorAll('.block-package-composition__image .cls-2'))
+
+
+        const fromIndex = 1
+        const item = elements.splice(fromIndex, 1)[0]
+        elements.splice(elements.length, 1, item)
+
         for (let index = 0; index < elements.length; index++) {
             const element = elements[index]
+            const packInterval = document.querySelector('[data-pack-interval]').dataset.packInterval
+            let currentIndex = 1
+            const timer = setInterval(function() {
+                if (elements[currentIndex]) {
+                    const element = elements[currentIndex]
+                    const title = element.dataset.tabTitle;
+                    const category = element.dataset.tabCategory
 
+                    const tabContent = document.querySelectorAll(`[data-tab-content][data-tab-category="${category}"]`);
+                    const tabLinks = document.querySelectorAll(`[data-tab-title][data-tab-category="${category}"]`);
 
+                    tabContent.forEach(function(el) {
+                        el.classList.remove("active");
+                    });
+
+                    tabLinks.forEach(function(el) {
+                        el.classList.remove("active");
+                    });
+
+                    const activeContent = document.querySelectorAll(`[data-tab-content="${title}"][data-tab-category="${category}"]`)
+
+                    activeContent.forEach(function(el) {
+                        el.classList.add('active')
+                    })
+                    document.querySelector(`[data-tab-content="${title}"]`).classList.add("active");
+
+                    element.classList.add("active");
+
+                    currentIndex++
+                } else {
+                    currentIndex = 0
+                }
+            }, packInterval)
 
 
             element.addEventListener('mouseenter', function(e) {
                 if (element.classList.contains('active')) return
+
+
 
                 const title = element.dataset.tabTitle;
                 const category = element.dataset.tabCategory
@@ -41,9 +80,12 @@ window.addEventListener('DOMContentLoaded', function() {
                 })
                 document.querySelector(`[data-tab-content="${title}"]`).classList.add("active");
 
+                clearInterval(timer)
                 element.classList.add("active");
             })
         }
+
+
     }
 
     if (document.querySelector('.format-ways__slider')) {
