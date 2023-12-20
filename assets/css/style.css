@@ -17313,6 +17313,10 @@ body {
   }
 
   .factory-standard {
+    padding-top: 80px;
+  }
+
+  .factory-standard {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -17327,6 +17331,10 @@ body {
   }
 
   .factory-standard__container {
+    margin-bottom: 40px;
+  }
+
+  .factory-standard__content {
     margin-bottom: 40px;
   }
 
