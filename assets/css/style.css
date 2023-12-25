@@ -15569,27 +15569,27 @@ body {
 
 @media (max-width: 1660.98px) {
   .base-title {
-    font-size: 32px;
+    font-size: 55px;
   }
 
   .item-cards-packaging__title {
-    font-size: 32px;
+    font-size: 55px;
   }
 
   .factory-production-block__title {
-    font-size: 32px;
+    font-size: 55px;
   }
 
   .modal-cap__title {
-    font-size: 32px;
+    font-size: 55px;
   }
 
   .factory-standard_tech .factory-standard__title {
-    font-size: 32px;
+    font-size: 55px;
   }
 
   .block-marketing__title {
-    font-size: 32px;
+    font-size: 45px;
   }
 }
 
@@ -17071,6 +17071,10 @@ body {
 }
 
 @media (max-width: 991.98px) {
+  .base-title {
+    font-size: 32px;
+  }
+
   .base-button {
     min-height: 64px;
   }
@@ -17188,6 +17192,10 @@ body {
 
   .block-advantages-packaging {
     padding: 20px;
+  }
+
+  .item-cards-packaging__title {
+    font-size: 32px;
   }
 
   .item-cards-packaging__button {
@@ -17469,6 +17477,10 @@ body {
     flex-direction: column;
   }
 
+  .factory-production-block__title {
+    font-size: 32px;
+  }
+
   .factory-production-block__image {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -17734,6 +17746,10 @@ body {
     justify-content: center;
   }
 
+  .modal-cap__title {
+    font-size: 32px;
+  }
+
   .modal-cap__dots {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -17788,6 +17804,10 @@ body {
   .factory-standard_eq .factory-standard__image {
     padding: 0 15px;
     margin-bottom: 40px;
+  }
+
+  .factory-standard_tech .factory-standard__title {
+    font-size: 32px;
   }
 
   .factory-standard_tech {
@@ -17858,6 +17878,10 @@ body {
 
   .block-marketing__image img {
     height: 340px;
+  }
+
+  .block-marketing__title {
+    font-size: 32px;
   }
 
   .block-marketing__title {
@@ -21842,23 +21866,23 @@ body {
 
 @media (min-width: 991.98px) and (max-width: 1660.98px) {
   .top-advantages-packaging__title {
-    font-size: 32px;
+    font-size: 45px;
   }
 
   .product-team__title {
-    font-size: 32px;
+    font-size: 45px;
   }
 
   .item-wcm-factory__title {
-    font-size: 32px;
+    font-size: 45px;
   }
 
   .wcm__title {
-    font-size: 32px;
+    font-size: 45px;
   }
 
   .block-wcm__year {
-    font-size: 32px;
+    font-size: 45px;
   }
 }
 
