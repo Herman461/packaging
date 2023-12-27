@@ -1,3 +1,5 @@
+const delay = 400
+
 // Меню
 
 const menu = document.querySelector('.base-header')

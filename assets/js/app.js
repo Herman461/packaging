@@ -1,4 +1,4 @@
-const delay = 400
+
 
 window.addEventListener('DOMContentLoaded', function() {
     // const animElements = document.querySelectorAll('.anim-start')
