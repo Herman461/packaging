@@ -13,9 +13,9 @@ window.addEventListener('DOMContentLoaded', function() {
         const elements = Array.from(document.querySelectorAll('.block-package-composition__image .cls-2'))
 
 
-        const fromIndex = 1
-        const item = elements.splice(fromIndex, 1)[0]
-        elements.splice(elements.length, 1, item)
+        // const fromIndex = 1
+        // const item = elements.splice(fromIndex, 1)[0]
+        // elements.splice(elements.length, 1, item)
 
         for (let index = 0; index < elements.length; index++) {
             const element = elements[index]
