@@ -25,6 +25,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 if (elements[currentIndex]) {
                     const element = elements[currentIndex]
                     const title = element.dataset.tabTitle;
+                    if (!title) return;
                     const category = element.dataset.tabCategory
 
                     const tabContent = document.querySelectorAll(`[data-tab-content][data-tab-category="${category}"]`);
@@ -43,6 +44,7 @@ window.addEventListener('DOMContentLoaded', function() {
                     activeContent.forEach(function(el) {
                         el.classList.add('active')
                     })
+                    console.log(title)
                     document.querySelector(`[data-tab-content="${title}"]`).classList.add("active");
 
                     element.classList.add("active");
@@ -61,7 +63,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
                 const title = element.dataset.tabTitle;
                 const category = element.dataset.tabCategory
-
+                if (!title) return;
                 const tabContent = document.querySelectorAll(`[data-tab-content][data-tab-category="${category}"]`);
                 const tabLinks = document.querySelectorAll(`[data-tab-title][data-tab-category="${category}"]`);
 
