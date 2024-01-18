@@ -5343,7 +5343,7 @@ body {
 }
 
 .intro__body {
-  padding: 80px 0 45px;
+  padding: 80px 20px 45px;
 }
 
 .intro__text {
@@ -9896,6 +9896,19 @@ body {
     margin-right: 24px;
   }
 
+  .footer__item {
+    min-width: 250px;
+    max-width: 50%;
+    padding-right: 20px;
+  }
+
+  .footer__item:last-child {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
   .marketing-team__items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11476,12 +11489,13 @@ body {
 
   .block-intro__image {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 360px;
-    flex: 0 0 360px;
+    -ms-flex: 0 0 320px;
+    flex: 0 0 320px;
   }
 
   .block-intro__content {
-    padding-left: 72px;
+    padding-left: 36px;
+    padding-right: 10px;
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
@@ -13728,7 +13742,7 @@ body {
 
 @media (min-width: 1200.98px) {
   .intro__body {
-    padding: 137px 0 45px;
+    padding: 137px 20px 45px;
   }
 
   .package-composition__container {
@@ -13895,6 +13909,18 @@ body {
 
   .section-packing__page2-right .list-pack__item img {
     width: 100%;
+  }
+}
+
+@media (min-width: 1440.98px) {
+  .block-intro__image {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 360px;
+    flex: 0 0 360px;
+  }
+
+  .block-intro__content {
+    padding-left: 72px;
   }
 }
 
@@ -15666,11 +15692,11 @@ body {
   }
 
   .factory-production {
-    padding-bottom: calc(60px + 100 * (100vw - 320px) / 1550);
+    padding-bottom: calc(40px + 120 * (100vw - 320px) / 1550);
   }
 
   .factory-production {
-    padding-top: calc(60px + 100 * (100vw - 320px) / 1550);
+    padding-top: calc(40px + 120 * (100vw - 320px) / 1550);
   }
 
   .factory-production__title {
@@ -16254,7 +16280,7 @@ body {
   }
 
   .service-advantages {
-    padding-top: calc(80px + 80 * (100vw - 320px) / 1550);
+    padding-top: calc(40px + 120 * (100vw - 320px) / 1550);
   }
 
   .service-advantages {
@@ -16282,7 +16308,7 @@ body {
   }
 
   .service-about {
-    padding-top: calc(80px + 80 * (100vw - 320px) / 1550);
+    padding-top: calc(40px + 120 * (100vw - 320px) / 1550);
   }
 
   .service-about {
@@ -16354,11 +16380,11 @@ body {
   }
 
   .service-block {
-    padding-top: calc(80px + 80 * (100vw - 320px) / 1550);
+    padding-top: calc(40px + 120 * (100vw - 320px) / 1550);
   }
 
   .service-block {
-    padding-bottom: calc(80px + 80 * (100vw - 320px) / 1550);
+    padding-bottom: calc(40px + 120 * (100vw - 320px) / 1550);
   }
 
   .service-block__title {
@@ -16382,11 +16408,11 @@ body {
   }
 
   .service-items {
-    padding-top: calc(80px + 80 * (100vw - 320px) / 1550);
+    padding-top: calc(40px + 120 * (100vw - 320px) / 1550);
   }
 
   .service-items {
-    padding-bottom: calc(80px + 80 * (100vw - 320px) / 1550);
+    padding-bottom: calc(40px + 120 * (100vw - 320px) / 1550);
   }
 
   .element-service-items__title {
@@ -16394,7 +16420,7 @@ body {
   }
 
   .service-description {
-    padding-bottom: calc(80px + 80 * (100vw - 320px) / 1550);
+    padding-bottom: calc(40px + 120 * (100vw - 320px) / 1550);
   }
 
   .service-description__title {
@@ -16476,7 +16502,6 @@ body {
   }
 
   .intro__image {
-    min-height: 700px;
     height: 100%;
   }
 
@@ -16630,38 +16655,6 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-  }
-
-  .footer__item {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 1 50%;
-    flex: 0 1 50%;
-  }
-
-  .footer__item:last-child {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 100%;
-    flex: 1 1 100%;
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-    -ms-flex-direction: row !important;
-    flex-direction: row !important;
-  }
-
-  .footer__item:last-child .item-footer__text {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-    -ms-flex-direction: row !important;
-    flex-direction: row !important;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .footer__item:last-child .item-footer__text span {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 1 50%;
-    flex: 0 1 50%;
   }
 }
 
@@ -19845,6 +19838,12 @@ body {
     margin-bottom: 8px;
   }
 
+  .footer__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+  }
+
   .footer__bottom {
     margin: 0 -12px;
   }
@@ -22904,6 +22903,221 @@ body {
   }
 }
 
+@media (min-width: 991.98px) and (max-width: 1630px) {
+  .intro__image {
+    min-height: 700px;
+  }
+
+  .format-ways__text {
+    max-width: 460px;
+  }
+}
+
+@media (min-width: 991.98px) and (max-width: 1200.98px) {
+  .intro_base .intro__image {
+    width: 28% !important;
+  }
+
+  .intro_base .intro__body {
+    width: 72% !important;
+  }
+}
+
+@media (min-width: 767.98px) and (max-width: 1440.98px) {
+  .design-about {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .design-ways {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .categories-packaging {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .advantages-packaging {
+    padding-top: 40px;
+  }
+
+  .advantages-packaging {
+    padding-bottom: 40px;
+  }
+
+  .cards-packaging {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .format-products {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .package-composition {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .ways-tubes {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .package-product {
+    padding-bottom: 40px;
+  }
+
+  .package-more {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .product-safety {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .product-format {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .product-categories {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .product-process {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .product-team {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .product-child {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .product-wine {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .factory-main-block {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .factory-about {
+    padding-bottom: 40px;
+  }
+
+  .factory-production {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .factory-wcm {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .factory-advantages {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .factory-responsibility {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .factory-guarantee {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .wcm {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .factory-forest {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .factory-download {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .equipment-block {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .automation {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .factory-support {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .marketing-request {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .marketing-team {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .service-advantages {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .main-block__body {
+    padding-bottom: 40px;
+  }
+
+  .service-solutions {
+    padding-bottom: 40px;
+  }
+
+  .service-solutions__block {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+  }
+
+  .service-block {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .service-items {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .service-description {
+    padding-bottom: 40px;
+  }
+}
+
 @media (min-width: 576.98px) and (max-width: 1870px) {
   .design-about__item {
     margin-bottom: calc(24px + 40 * (100vw - 320px) / 1550);
@@ -22927,12 +23141,6 @@ body {
 
   .block-product-safety__icon {
     margin-right: calc(1px + 31 * (100vw - 320px) / 1550);
-  }
-}
-
-@media (min-width: 991.98px) and (max-width: 1630px) {
-  .format-ways__text {
-    max-width: 460px;
   }
 }
 
@@ -23001,6 +23209,18 @@ body {
 @media (min-width: 576.98px) and (max-width: 1630px) {
   .item-product-wine__body {
     padding: 20px;
+  }
+}
+
+@media (max-width: 991.98px) and (min-width: 767.98px) and (max-width: 1440.98px) {
+  .factory-standard_eq {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .factory-standard_tech {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
