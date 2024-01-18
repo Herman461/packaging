@@ -11915,12 +11915,18 @@ body {
   .product-wine__image {
     margin-right: 148px;
     margin-right: 148px;
-    margin-bottom: 24px;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     width: 100%;
     max-width: 543px;
+  }
+
+  .product-wine__image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100% - 24px);
   }
 
   .product-wine__content {
@@ -12664,6 +12670,10 @@ body {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
+  }
+
+  .intro {
+    overflow: hidden;
   }
 }
 
