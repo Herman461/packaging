@@ -402,7 +402,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 const animItem = animItems[index];
                 const animItemHeight = animItem.offsetHeight;
                 const animItemOffset = offset(animItem).top;
-                const animStart = 10;
+                let animStart = 10;
 
                 let animItemPoint = window.innerHeight - animItemHeight / animStart;
                 if (animItemHeight > window.innerHeight) {
