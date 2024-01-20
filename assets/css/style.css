@@ -9384,8 +9384,6 @@ body {
 }
 
 .service-about {
-  -webkit-box-shadow: inset 0px 0px 47px 0px rgba(0, 0, 0, 0.08);
-  box-shadow: inset 0px 0px 47px 0px rgba(0, 0, 0, 0.08);
   padding-top: 160px;
   padding-bottom: 160px;
 }
@@ -9609,8 +9607,20 @@ body {
   margin-bottom: 80px;
 }
 
+.service-block__text p {
+  margin-bottom: 20px;
+}
+
+.service-block__text p:last-child {
+  margin-bottom: 0;
+}
+
 .service-block__image img {
   border-radius: 5px;
+}
+
+.item-service-block__body {
+  height: 100%;
 }
 
 .item-service-block__text {
@@ -10309,6 +10319,10 @@ body {
     display: flex;
   }
 
+  .service-block__text {
+    max-width: 487px;
+  }
+
   .service-block__items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10377,6 +10391,10 @@ body {
     flex: 0 1 50%;
     padding: 0 12px;
     margin-bottom: 24px;
+  }
+
+  .row-service-description__text {
+    max-width: 439px;
   }
 }
 
@@ -11399,11 +11417,11 @@ body {
   }
 
   .intro_base .intro__body {
-    width: 65%;
+    width: 62%;
   }
 
   .intro_base .intro__image {
-    width: 35%;
+    width: 38%;
   }
 
   .intro_base .intro__title {
@@ -11488,6 +11506,9 @@ body {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     margin-right: 40px;
   }
 
@@ -12588,6 +12609,10 @@ body {
     width: 100%;
   }
 
+  .service-block__content {
+    margin-bottom: 24px;
+  }
+
   .service-block__content_f {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -12633,6 +12658,35 @@ body {
 
   .service-description__image {
     margin-right: 40px;
+  }
+
+  .service-description__content_f {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .service-description__content_f .service-description__text {
+    max-width: 556px;
+  }
+
+  .service-description__content_f .service-description__row {
+    max-width: 556px;
+  }
+
+  .service-description__content_f .service-description__button {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+
+  .service-description__content_f .service-description__row {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
   }
 
   .service-description__text {
@@ -22932,16 +22986,6 @@ body {
 
   .marketing-team__content {
     padding-left: 35px;
-  }
-}
-
-@media (min-width: 991.98px) and (max-width: 1200.98px) {
-  .intro_base .intro__image {
-    width: 28% !important;
-  }
-
-  .intro_base .intro__body {
-    width: 72% !important;
   }
 }
 
