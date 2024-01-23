@@ -11593,6 +11593,10 @@ body {
     min-height: 800px;
   }
 
+  .block-package-composition__image {
+    padding-right: 10px;
+  }
+
   .format-ways__top {
     display: -webkit-box;
     display: -ms-flexbox;

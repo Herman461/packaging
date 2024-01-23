@@ -26,7 +26,7 @@ window.addEventListener('DOMContentLoaded', function() {
                     const element = elements[currentIndex]
                     const title = element.dataset.tabTitle;
                     const category = element.dataset.tabCategory
-
+                    if (!title) return
                     const tabContent = document.querySelectorAll(`[data-tab-content][data-tab-category="${category}"]`);
                     const tabLinks = document.querySelectorAll(`[data-tab-title][data-tab-category="${category}"]`);
 
@@ -61,7 +61,8 @@ window.addEventListener('DOMContentLoaded', function() {
 
                 const title = element.dataset.tabTitle;
                 const category = element.dataset.tabCategory
-
+                if (!title) return
+                console.log(element)
                 const tabContent = document.querySelectorAll(`[data-tab-content][data-tab-category="${category}"]`);
                 const tabLinks = document.querySelectorAll(`[data-tab-title][data-tab-category="${category}"]`);
 
