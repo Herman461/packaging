@@ -12592,6 +12592,10 @@ body {
     margin-right: 30px;
   }
 
+  .content-solutions-service__list {
+    margin-left: 25px;
+  }
+
   .service-block__container {
     display: -webkit-box;
     display: -ms-flexbox;
