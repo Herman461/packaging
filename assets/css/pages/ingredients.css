@@ -1,0 +1,940 @@
+.ingredients-solutions {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.ingredients-solutions_other {
+  -webkit-box-shadow: inset 0px 0px 47px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: inset 0px 0px 47px 0px rgba(0, 0, 0, 0.08);
+}
+
+.ingredients-solutions__title {
+  margin-bottom: 60px;
+}
+
+.item-ingredients-solutions__body {
+  border: 1px solid #D0D0D0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.item-ingredients-solutions:last-child .item-ingredients-solutions__body {
+  margin-bottom: 0;
+}
+
+.item-ingredients-solutions__image {
+  overflow: hidden;
+  position: relative;
+  height: 348px;
+}
+
+.item-ingredients-solutions__image img {
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.item-ingredients-solutions__name {
+  font-size: 24px;
+  font-family: Cera;
+  color: #003DA6;
+}
+
+.item-ingredients-solutions__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 33px 24px;
+}
+
+.item-ingredients-solutions__arrow svg {
+  color: #003DA6;
+  width: 12px;
+  height: 12px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 12px;
+  flex: 0 0 12px;
+}
+
+.ingredients-advantages {
+  -webkit-box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.08);
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.ingredients-advantages__title {
+  margin-bottom: 120px;
+}
+
+.ingredients-advantages__item {
+  margin-bottom: 65px;
+}
+
+.item-ingredients-advantages__icon img {
+  width: 32px;
+  height: 32px;
+}
+
+.item-ingredients-advantages__text {
+  line-height: 130%;
+  color: #003DA6;
+  font-family: Nekst;
+  font-size: 28px;
+}
+
+.ingredients-logistics {
+  padding-top: 200px;
+  padding-bottom: 280px;
+  -webkit-box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.08);
+}
+
+.ingredients-logistics__title {
+  margin-bottom: 40px;
+}
+
+.ingredients-logistics__text {
+  color: #444;
+  font-family: Cera;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 94px;
+}
+
+.ingredients-logistics__text p {
+  margin-bottom: 20px;
+}
+
+.ingredients-logistics__text p:last-child {
+  margin: 0;
+}
+
+.ingredients-logistics__image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ingredients-logistics__block {
+  margin-bottom: 24px;
+}
+
+.ingredients-logistics__subimage {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 50%;
+  flex: 0 1 50%;
+  padding: 0 12px;
+}
+
+.ingredients-logistics__subimage img {
+  border-radius: 5px;
+  width: 100%;
+  min-height: 280px;
+  max-height: 280px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.block-ingredients-logistics__title {
+  color: #003DA6;
+  font-family: Nekst;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.block-ingredients-logistics__icon {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.block-ingredients-logistics__icon img {
+  height: 48px;
+  width: 48px;
+}
+
+.ingredients-description {
+  position: relative;
+}
+
+.ingredients-description__image img {
+  width: 482px;
+  -o-object-position: center;
+  object-position: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.ingredients-description__title {
+  margin-bottom: 133px;
+}
+
+.item-ingredients-description__icon {
+  margin-bottom: 24px;
+}
+
+.item-ingredients-description__icon img {
+  width: 56px;
+  height: 56px;
+}
+
+.item-ingredients-description__title {
+  font-family: "Nekst";
+  line-height: 110%;
+  color: #003DA6;
+  margin-bottom: 16px;
+  font-size: 28px;
+}
+
+.steps-intro__number {
+  color: #003DA6;
+}
+
+.steps-intro__text {
+  color: #003DA6;
+}
+
+.intro__text {
+  color: #444444;
+}
+
+.intro__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 76px;
+}
+
+.intro__list {
+  max-width: 324px;
+  width: 100%;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.intro__list li {
+  color: #444444;
+}
+
+.ingredients-optimization {
+  position: relative;
+}
+
+.ingredients-optimization__image img {
+  width: 800px;
+  -o-object-position: center;
+  object-position: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.ingredients-optimization__title {
+  margin-bottom: 40px;
+}
+
+@media (min-width: 767.98px) {
+  .ingredients-advantages__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+  }
+
+  .ingredients-advantages__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+    padding: 0 12px;
+  }
+
+  .item-ingredients-advantages__icon {
+    margin-bottom: 24px;
+  }
+
+  .ingredients-logistics__blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+  }
+
+  .ingredients-logistics__mobile-image {
+    display: none;
+  }
+
+  .ingredients-logistics__block {
+    padding: 0 12px;
+    min-height: 280px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+  }
+
+  .block-ingredients-logistics__body {
+    min-height: 280px;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border: 1px solid #D9D9D9;
+    padding: 32px 40px 40px 40px;
+  }
+
+  .ingredients-description__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 -20px;
+  }
+
+  .ingredients-description__item {
+    padding: 0 20px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+  }
+
+  .steps-intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .steps-intro {
+    margin: 0 -20px 60px;
+  }
+
+  .steps-intro__item {
+    padding: 0 20px;
+  }
+
+  .steps-intro__number {
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .ingredients-solutions__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+  }
+
+  .ingredients-solutions__item {
+    margin-bottom: 24px;
+  }
+
+  .ingredients-solutions__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 25%;
+    flex: 0 1 25%;
+    padding: 0 12px;
+  }
+
+  .ingredients-solutions__item_big {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 33.333%;
+    flex: 0 1 33.333%;
+  }
+
+  .item-ingredients-solutions__content .item-ingredients-solutions__arrow {
+    display: none;
+  }
+
+  .item-ingredients-solutions__arrow {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .ingredients-advantages__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 33.333%;
+    flex: 0 1 33.333%;
+  }
+
+  .ingredients-logistics__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .ingredients-logistics__text {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+
+  .ingredients-logistics__image {
+    margin-bottom: 24px;
+  }
+
+  .ingredients-description {
+    min-height: 1080px;
+  }
+
+  .ingredients-description__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .ingredients-description__image img {
+    min-height: 1080px;
+    max-height: 1080px;
+  }
+
+  .ingredients-description__container {
+    min-height: 1080px;
+  }
+
+  .ingredients-description__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .ingredients-description__content {
+    padding: 40px 0;
+    max-width: 1060px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .steps-intro {
+    margin: 0 -20px 120px -20px;
+  }
+
+  .ingredients-optimization {
+    min-height: 830px;
+  }
+
+  .ingredients-optimization__text {
+    max-width: 604px;
+  }
+
+  .ingredients-optimization__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .ingredients-optimization__image img {
+    min-height: 830px;
+    max-height: 830px;
+  }
+
+  .ingredients-optimization__container {
+    min-height: 830px;
+  }
+
+  .ingredients-optimization__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .ingredients-optimization__content {
+    padding: 40px 0;
+    max-width: 880px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1200.98px) {
+  .ingredients-logistics__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .ingredients-logistics__content {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    max-width: 460px;
+    width: 100%;
+    padding-right: 20px;
+  }
+
+  .ingredients-logistics__blocks {
+    max-width: 910px;
+  }
+}
+
+@media (max-width: 1870px) {
+  .ingredients-solutions {
+    padding-top: calc(40px + 120 * (100vw - 320px) / 1550);
+  }
+
+  .ingredients-solutions {
+    padding-bottom: calc(40px + 120 * (100vw - 320px) / 1550);
+  }
+
+  .ingredients-solutions__title {
+    margin-bottom: calc(40px + 20 * (100vw - 320px) / 1550);
+  }
+
+  .item-ingredients-solutions__image {
+    height: calc(200px + 148 * (100vw - 320px) / 1550);
+  }
+
+  .item-ingredients-solutions__name {
+    font-size: calc(15px + 9 * (100vw - 320px) / 1550);
+  }
+
+  .ingredients-advantages {
+    padding-top: calc(40px + 120 * (100vw - 320px) / 1550);
+  }
+
+  .ingredients-advantages {
+    padding-bottom: calc(40px + 120 * (100vw - 320px) / 1550);
+  }
+
+  .ingredients-advantages__title {
+    margin-bottom: calc(40px + 80 * (100vw - 320px) / 1550);
+  }
+
+  .ingredients-advantages__item {
+    margin-bottom: calc(24px + 41 * (100vw - 320px) / 1550);
+  }
+
+  .item-ingredients-advantages__text {
+    font-size: calc(15px + 13 * (100vw - 320px) / 1550);
+  }
+
+  .ingredients-logistics {
+    padding-top: calc(40px + 160 * (100vw - 320px) / 1550);
+  }
+
+  .ingredients-logistics {
+    padding-bottom: calc(40px + 240 * (100vw - 320px) / 1550);
+  }
+
+  .ingredients-logistics__text {
+    font-size: calc(15px + 2 * (100vw - 320px) / 1550);
+  }
+
+  .ingredients-logistics__text {
+    margin-bottom: calc(40px + 54 * (100vw - 320px) / 1550);
+  }
+
+  .ingredients-logistics__block {
+    margin-bottom: calc(16px + 8 * (100vw - 320px) / 1550);
+  }
+
+  .block-ingredients-logistics__title {
+    font-size: calc(15px + 5 * (100vw - 320px) / 1550);
+  }
+
+  .block-ingredients-logistics__icon img {
+    height: calc(32px + 16 * (100vw - 320px) / 1550);
+  }
+
+  .block-ingredients-logistics__icon img {
+    width: calc(32px + 16 * (100vw - 320px) / 1550);
+  }
+
+  .ingredients-description__image img {
+    width: calc(200px + 282 * (100vw - 320px) / 1550);
+  }
+
+  .ingredients-description__title {
+    margin-bottom: calc(30px + 103 * (100vw - 320px) / 1550);
+  }
+
+  .item-ingredients-description__title {
+    font-size: calc(22px + 6 * (100vw - 320px) / 1550);
+  }
+
+  .ingredients-optimization__image img {
+    width: calc(200px + 600 * (100vw - 320px) / 1550);
+  }
+
+  .ingredients-optimization__title {
+    margin-bottom: calc(30px + 10 * (100vw - 320px) / 1550);
+  }
+}
+
+@media (max-width: 1200.98px) {
+  .ingredients-logistics__image img {
+    width: 100%;
+    max-height: 350px;
+    -o-object-position: center;
+    object-position: center;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .ingredients-solutions__item:last-child {
+    margin: 0;
+  }
+
+  .item-ingredients-solutions__body {
+    margin-bottom: 16px;
+  }
+
+  .item-ingredients-solutions__image .item-ingredients-solutions__arrow {
+    display: none;
+  }
+
+  .item-ingredients-solutions__content {
+    padding: 20px;
+  }
+
+  .item-ingredients-solutions__arrow {
+    margin-top: 4px;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    line-height: 20px;
+  }
+
+  .ingredients-logistics__image {
+    display: none;
+  }
+
+  .ingredients-description {
+    padding-top: 80px;
+  }
+
+  .ingredients-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .ingredients-description__image {
+    margin: 0 -16px;
+    overflow: hidden;
+    height: 380px;
+  }
+
+  .ingredients-description__image img {
+    -o-object-position: right bottom;
+    object-position: right bottom;
+  }
+
+  .ingredients-description__image img {
+    width: 100%;
+  }
+
+  .ingredients-description__container {
+    margin-bottom: 40px;
+  }
+
+  .ingredients-description__content {
+    margin-bottom: 40px;
+  }
+
+  .item-ingredients-description__icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .item-ingredients-description__icon {
+    margin-bottom: 16px;
+  }
+
+  .ingredients-optimization {
+    padding-top: 80px;
+  }
+
+  .ingredients-optimization {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .ingredients-optimization__image {
+    margin: 0 -16px;
+    overflow: hidden;
+    height: 380px;
+  }
+
+  .ingredients-optimization__image img {
+    height: 360px;
+  }
+
+  .ingredients-optimization__image img {
+    -o-object-position: center;
+    object-position: center;
+  }
+
+  .ingredients-optimization__image img {
+    width: 100%;
+  }
+
+  .ingredients-optimization__container {
+    margin-bottom: 40px;
+  }
+
+  .ingredients-optimization__content {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 991.98px) and (max-width: 1870px) {
+  .ingredients-description__image {
+    height: calc(240px + 140 * (100vw - 320px) / 1550);
+  }
+
+  .ingredients-optimization__image {
+    height: calc(240px + 140 * (100vw - 320px) / 1550);
+  }
+
+  .ingredients-optimization__image img {
+    height: calc(240px + 120 * (100vw - 320px) / 1550);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .item-ingredients-advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .item-ingredients-advantages__icon {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+
+  .item-ingredients-advantages__icon {
+    margin-right: 24px;
+  }
+
+  .item-ingredients-advantages__icon {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 40px;
+    flex: 0 0 40px;
+    height: 40px;
+  }
+
+  .item-ingredients-advantages__icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .item-ingredients-advantages__text {
+    color: #444444;
+  }
+
+  .ingredients-logistics__mobile-image {
+    margin-bottom: 40px;
+  }
+
+  .ingredients-logistics__mobile-image img {
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    height: 320px;
+  }
+
+  .ingredients-logistics__subimage {
+    display: none;
+  }
+
+  .block-ingredients-logistics__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+
+  .block-ingredients-logistics__title br {
+    display: none;
+  }
+
+  .block-ingredients-logistics__icon {
+    margin-right: 16px;
+  }
+
+  .ingredients-description__title {
+    font-size: 32px;
+  }
+
+  .ingredients-description__item {
+    margin-bottom: 40px;
+  }
+
+  .ingredients-description__item:last-child {
+    margin: 0;
+  }
+
+  .intro__steps {
+    margin-bottom: 40px;
+  }
+
+  .steps-intro__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .steps-intro__item:last-child {
+    margin: 0;
+  }
+
+  .steps-intro__number {
+    margin-right: 8px;
+  }
+
+  .steps-intro__number {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+
+  .intro__row {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 767.98px) and (max-width: 1870px) {
+  .ingredients-logistics__mobile-image img {
+    height: calc(220px + 100 * (100vw - 320px) / 1550);
+  }
+
+  .ingredients-description__title {
+    font-size: calc(22px + 10 * (100vw - 320px) / 1550);
+  }
+}
+
+@media (min-width: 767.98px) and (max-width: 1440.98px) {
+  .ingredients-logistics {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 991.98px) and (max-width: 1870px) {
+  .ingredients-logistics__image {
+    margin-bottom: calc(16px + 8 * (100vw - 320px) / 1550);
+  }
+
+  .ingredients-description__content {
+    max-width: calc(200px + 860 * (100vw - 320px) / 1550);
+  }
+
+  .ingredients-optimization__content {
+    max-width: calc(200px + 680 * (100vw - 320px) / 1550);
+  }
+}
+
+@media (min-width: 767.98px) and (max-width: 1630px) {
+  .block-ingredients-logistics__body {
+    padding: 20px;
+  }
+}
+
+@media (any-hover: hover) {
+  .item-ingredients-solutions:hover .item-ingredients-solutions__image img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}

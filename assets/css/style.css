@@ -9658,6 +9658,10 @@ body {
   flex-direction: column;
 }
 
+.element-service-items__image img {
+  width: 100%;
+}
+
 .element-service-items__title {
   margin-bottom: 8px;
   -webkit-box-flex: 1;
