@@ -297,6 +297,44 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+
+    const developmentSliders = document.querySelectorAll('.development-items__elements')
+    if (developmentSliders.length > 0) {
+        for (let index = 0; index < developmentSliders.length; index++) {
+            const slider = developmentSliders[index]
+
+            const sliderEl = new Swiper(slider, {
+                spaceBetween: 16,
+                slidesPerView: 1.2,
+
+                speed: 800,
+                breakpoints: {
+                    991.98: {
+                        slidesPerView: 4,
+                    },
+                    767.98: {
+                        slidesPerView: 3.2,
+                    },
+                    460.98: {
+                        slidesPerView: 2.2,
+                    },
+
+                },
+                // navigation: {
+                //     nextEl: slider.closest('.modal-cap__bottom').querySelector('.modal-cap__button-next'),
+                //     prevEl: slider.closest('.modal-cap__bottom').querySelector('.modal-cap__button-prev')
+                // },
+                // pagination: {
+                //     el: slider.closest('.modal-cap__bottom').querySelector('.modal-cap__dots'),
+                //     dynamicBullets: true,
+                //     dynamicMainBullets: 4,
+                //     clickable: true,
+                // },
+            })
+
+        }
+    }
+
     // header.addEventListener('click', function(e) {
     //     if (
     //         document.querySelector('.header__menu.active')
