@@ -1571,7 +1571,27 @@
     padding-bottom: 40px;
   }
 
+  .development-recycling {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
   .development-environment {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .development-package {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .development-facts {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .development-about {
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -1582,6 +1602,11 @@
   }
 
   .development-description {
+    padding-bottom: 40px;
+  }
+
+  .development-technology {
+    padding-top: 40px;
     padding-bottom: 40px;
   }
 }

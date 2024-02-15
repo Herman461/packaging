@@ -906,6 +906,16 @@
 }
 
 @media (min-width: 767.98px) and (max-width: 1440.98px) {
+  .ingredients-solutions {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .ingredients-advantages {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
   .ingredients-logistics {
     padding-top: 40px;
     padding-bottom: 40px;

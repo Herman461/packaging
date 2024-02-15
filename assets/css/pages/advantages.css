@@ -870,6 +870,23 @@
   }
 }
 
+@media (min-width: 767.98px) and (max-width: 1440.98px) {
+  .base-advantages-description {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .base-advantages-services {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .base-advantages-team {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
 @media (min-width: 991.98px) and (max-width: 1870px) {
   .base-advantages-solutions__content {
     max-width: calc(200px + 905 * (100vw - 320px) / 1550);
