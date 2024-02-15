@@ -9755,6 +9755,33 @@ body {
   object-fit: contain;
 }
 
+.base-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 17px;
+}
+
+.base-link span {
+  margin-right: 10px;
+  color: #003DA6;
+  font-family: Cera;
+  line-height: 140%;
+}
+
+.base-link svg {
+  fill: transparent;
+  color: #003DA6;
+  width: 12px;
+  height: 12px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 12px;
+  flex: 0 0 12px;
+}
+
 @media (min-width: 576.98px) {
   .design-about__items {
     display: -webkit-box;
@@ -16527,6 +16554,10 @@ body {
 
   .service-description__button {
     margin-top: calc(40px + 72 * (100vw - 320px) / 1550);
+  }
+
+  .base-link {
+    font-size: calc(15px + 2 * (100vw - 320px) / 1550);
   }
 }
 

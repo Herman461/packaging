@@ -1391,6 +1391,10 @@
     margin-bottom: 40px;
   }
 
+  .development-items__element {
+    height: auto !important;
+  }
+
   .development-items__elements {
     margin: 0 -15px !important;
     padding-left: 15px !important;

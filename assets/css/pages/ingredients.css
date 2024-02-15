@@ -1,6 +1,6 @@
 .ingredients-solutions {
-  padding-top: 160px;
-  padding-bottom: 160px;
+  padding-top: 140px;
+  padding-bottom: 140px;
 }
 
 .ingredients-solutions_other {
@@ -67,8 +67,8 @@
 .ingredients-advantages {
   -webkit-box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.08);
   box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.08);
-  padding-top: 160px;
-  padding-bottom: 160px;
+  padding-top: 140px;
+  padding-bottom: 140px;
 }
 
 .ingredients-advantages__title {
@@ -92,10 +92,8 @@
 }
 
 .ingredients-logistics {
-  padding-top: 200px;
-  padding-bottom: 280px;
-  -webkit-box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.08);
-  box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.08);
+  padding-top: 140px;
+  padding-bottom: 140px;
 }
 
 .ingredients-logistics__title {
@@ -235,6 +233,8 @@
 }
 
 .ingredients-optimization {
+  -webkit-box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.08);
   position: relative;
 }
 
@@ -548,11 +548,11 @@
 
 @media (max-width: 1870px) {
   .ingredients-solutions {
-    padding-top: calc(40px + 120 * (100vw - 320px) / 1550);
+    padding-top: calc(40px + 100 * (100vw - 320px) / 1550);
   }
 
   .ingredients-solutions {
-    padding-bottom: calc(40px + 120 * (100vw - 320px) / 1550);
+    padding-bottom: calc(40px + 100 * (100vw - 320px) / 1550);
   }
 
   .ingredients-solutions__title {
@@ -568,11 +568,11 @@
   }
 
   .ingredients-advantages {
-    padding-top: calc(40px + 120 * (100vw - 320px) / 1550);
+    padding-top: calc(40px + 100 * (100vw - 320px) / 1550);
   }
 
   .ingredients-advantages {
-    padding-bottom: calc(40px + 120 * (100vw - 320px) / 1550);
+    padding-bottom: calc(40px + 100 * (100vw - 320px) / 1550);
   }
 
   .ingredients-advantages__title {
@@ -588,11 +588,11 @@
   }
 
   .ingredients-logistics {
-    padding-top: calc(40px + 160 * (100vw - 320px) / 1550);
+    padding-top: calc(40px + 100 * (100vw - 320px) / 1550);
   }
 
   .ingredients-logistics {
-    padding-bottom: calc(40px + 240 * (100vw - 320px) / 1550);
+    padding-bottom: calc(40px + 100 * (100vw - 320px) / 1550);
   }
 
   .ingredients-logistics__text {
