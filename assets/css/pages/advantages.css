@@ -214,7 +214,7 @@
 }
 
 .base-advantages-partner__image img {
-  width: 600px;
+  width: 830px;
   -o-object-position: center;
   object-position: center;
   -o-object-fit: cover;
@@ -222,7 +222,7 @@
 }
 
 .base-advantages-partner__title {
-  max-width: 730px;
+  max-width: 707px;
   margin-bottom: 64px;
   font-size: 56px;
 }
@@ -233,7 +233,7 @@
   color: #003DA6;
   font-family: Nekst;
   line-height: 130%;
-  max-width: 786px;
+  max-width: 556px;
 }
 
 @media (min-width: 767.98px) {
@@ -657,7 +657,7 @@
   }
 
   .base-advantages-partner__image img {
-    width: calc(200px + 400 * (100vw - 320px) / 1550);
+    width: calc(100px + 730 * (100vw - 320px) / 1550);
   }
 
   .base-advantages-partner__title {
@@ -674,6 +674,12 @@
 
   .base-advantages-partner__text {
     font-size: calc(22px + 6 * (100vw - 320px) / 1550);
+  }
+}
+
+@media (max-width: 1630px) {
+  .base-advantages-partner__title {
+    max-width: 550px;
   }
 }
 
