@@ -936,6 +936,22 @@
     padding-left: calc(1px + 139 * (100vw - 320px) / 1550);
   }
 
+  .base-advantages-partner {
+    min-height: calc(100px + 980 * (100vw - 320px) / 1550);
+  }
+
+  .base-advantages-partner__image img {
+    min-height: calc(100px + 980 * (100vw - 320px) / 1550);
+  }
+
+  .base-advantages-partner__image img {
+    max-height: calc(100px + 980 * (100vw - 320px) / 1550);
+  }
+
+  .base-advantages-partner__container {
+    min-height: calc(100px + 980 * (100vw - 320px) / 1550);
+  }
+
   .base-advantages-partner__content {
     max-width: calc(200px + 905 * (100vw - 320px) / 1550);
   }
