@@ -542,4 +542,55 @@ window.addEventListener('DOMContentLoaded', function() {
             animOnScroll();
         }, 400);
     }
+
+    if (document.querySelector('.job-intro__copy')) {
+        const copyUrlBtn = document.querySelector('.job-intro__copy');
+
+        if (copyUrlBtn) {
+            copyUrlBtn.addEventListener('click', function(e) {
+                let tempInput = document.createElement('textarea');
+
+                tempInput.style.fontSize = '12pt';
+                tempInput.style.border = '0';
+                tempInput.style.padding = '0';
+                tempInput.style.margin = '0';
+                tempInput.style.position = 'absolute';
+                tempInput.style.left = '-9999px';
+                tempInput.setAttribute('readonly', '');
+
+                tempInput.value = window.location.href;
+
+                copyUrlBtn.parentNode.appendChild(tempInput);
+
+                tempInput.select();
+                tempInput.setSelectionRange(0, 99999);
+
+                document.execCommand('copy');
+
+                tempInput.parentNode.removeChild(tempInput);
+                e.preventDefault()
+            });
+        }
+    }
+
+    if (document.querySelector('.job-factory__images')) {
+        new Swiper(document.querySelector('.job-factory__images'), {
+            spaceBetween: 15,
+            slidesPerView: 1.5,
+            speed: 800,
+            loop: true,
+            breakpoints: {
+                767.98: {
+                    slidesPerView: 3,
+                },
+                436.98: {
+                    slidesPerView: 2,
+                },
+            },
+            navigation: {
+                nextEl: document.querySelector('.job-factory__button-next'),
+                prevEl: document.querySelector('.job-factory__button-prev')
+            },
+        })
+    }
 })
