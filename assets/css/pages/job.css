@@ -499,7 +499,13 @@
 
 .job-vacancies__link {
   margin-bottom: 5px;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
   margin-bottom: 10px;
 }
 
@@ -511,8 +517,11 @@
 }
 
 .job-vacancies__link svg {
-  width: 15px;
-  height: 15px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 21px;
+  flex: 0 0 21px;
+  width: 21px;
+  height: 42px;
   display: inline-block;
   color: #003DA6;
   margin-left: 10px;
@@ -543,10 +552,21 @@
 
 .item-job-about__body {
   border: 2px solid #D9D9D9;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .item-job-about__image {
   position: relative;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   height: 280px;
 }
 
@@ -563,6 +583,9 @@
 }
 
 .item-job-about__text {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   padding: 37px 27px;
   font-family: "Cera";
   color: #003DA6;
@@ -805,12 +828,21 @@
     max-width: 437px;
   }
 
+  .job-vacancies__link svg {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 15px;
+    flex: 0 0 15px;
+    width: 15px;
+    height: 15px;
+  }
+
   .job-about__text {
     padding-left: 110px;
   }
 
   .job-about__items {
     padding-left: 110px;
+    padding-right: 110px;
   }
 
   .job-factory__text {
@@ -1028,7 +1060,7 @@
   }
 
   .item-job-about__image {
-    height: calc(140px + 140 * (100vw - 320px) / 1550);
+    height: calc(220px + 60 * (100vw - 320px) / 1550);
   }
 
   .item-job-about__text {
@@ -1132,6 +1164,10 @@
     margin: 0 10px 0 0;
   }
 
+  .job-form__text {
+    color: #003DA6;
+  }
+
   .job-form__bottom {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1140,9 +1176,12 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .job-form__checkbox {
@@ -1219,6 +1258,10 @@
 }
 
 @media (max-width: 576.98px) {
+  .job-intro__button {
+    width: 100%;
+  }
+
   .job-description__block {
     padding: 30px 15px;
   }
@@ -1271,6 +1314,10 @@
 
   .job-about__items {
     padding-left: calc(1px + 109 * (100vw - 320px) / 1550);
+  }
+
+  .job-about__items {
+    padding-right: calc(1px + 109 * (100vw - 320px) / 1550);
   }
 
   .job-factory__text {

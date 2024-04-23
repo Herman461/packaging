@@ -576,16 +576,13 @@ window.addEventListener('DOMContentLoaded', function() {
     if (document.querySelector('.job-factory__images')) {
         new Swiper(document.querySelector('.job-factory__images'), {
             spaceBetween: 15,
-            slidesPerView: 1.5,
+            slidesPerView: 1.3,
             speed: 800,
             loop: true,
             breakpoints: {
-                767.98: {
-                    slidesPerView: 3,
-                },
-                436.98: {
-                    slidesPerView: 2,
-                },
+                991.98: {
+                    slidesPerView: 2
+                }
             },
             navigation: {
                 nextEl: document.querySelector('.job-factory__button-next'),
