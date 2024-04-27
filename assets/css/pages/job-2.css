@@ -497,7 +497,7 @@
   margin-bottom: 95px;
 }
 
-.job-vacancies__link {
+.job-vacancies__subtitle {
   margin-bottom: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -509,7 +509,7 @@
   margin-bottom: 10px;
 }
 
-.job-vacancies__link span {
+.job-vacancies__subtitle span {
   color: #003DA6;
   font-family: "Cera";
   line-height: 110%;
@@ -695,7 +695,7 @@
   font-size: 32px;
 }
 
-.job-vacancies__link svg {
+.job-vacancies__subtitle svg {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 15px;
   flex: 0 0 15px;
@@ -705,6 +705,30 @@
 
 .footer__bottom {
   margin: 0;
+}
+
+.job-vacancies__link {
+  color: #003DA6;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.job-vacancies__link svg {
+  width: 14px;
+  height: 14px;
+  color: #003DA6;
+  margin-left: 10px;
+}
+
+.job-vacancies__link span {
+  font-size: 14px;
+  font-family: "Cera";
+  line-height: 120%;
 }
 
 @media (min-width: 576.98px) {
@@ -1043,11 +1067,11 @@
     margin-bottom: calc(30px + 65 * (100vw - 320px) / 1550);
   }
 
-  .job-vacancies__link span {
+  .job-vacancies__subtitle span {
     font-size: calc(20px + 12 * (100vw - 320px) / 1550);
   }
 
-  .job-vacancies__link {
+  .job-vacancies__subtitle {
     margin-bottom: calc(5px + 5 * (100vw - 320px) / 1550);
   }
 
