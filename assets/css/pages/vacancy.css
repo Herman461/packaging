@@ -852,19 +852,6 @@
 }
 
 @media (min-width: 767.98px) {
-  .vacancy-single__form {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 476px;
-    flex: 0 0 476px;
-  }
-
-  .vacancy-single__content {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding-left: 104px;
-  }
-
   .vacancy {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -899,9 +886,37 @@
   }
 }
 
+@media (min-width: 1024.98px) {
+  .vacancy-single__form {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 476px;
+    flex: 0 0 476px;
+  }
+
+  .vacancy-single__content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding-left: 104px;
+  }
+}
+
 @media (max-width: 1870px) {
   .vacancy-single__title {
     font-size: calc(28px + 36 * (100vw - 320px) / 1550);
+  }
+}
+
+@media (max-width: 1024.98px) {
+  .vacancy-single__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .vacancy-single__content {
+    margin-bottom: 60px;
   }
 }
 
@@ -1090,17 +1105,6 @@
     padding-bottom: 60px !important;
   }
 
-  .vacancy-single__body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
-  }
-
-  .vacancy-single__content {
-    margin-bottom: 60px;
-  }
-
   .modal-success__title {
     font-size: 28px;
   }
@@ -1173,52 +1177,13 @@
   }
 }
 
-@media (min-width: 991.98px) and (max-width: 1630px) {
+@media (min-width: 1024.98px) and (max-width: 1630px) {
   .vacancy-single__content {
     padding-left: 50px;
-  }
-
-  .vacancy__filter {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 450px;
-    flex: 0 0 450px;
-  }
-
-  .filter-vacancy__wrapper {
-    padding: 20px;
   }
 }
 
 @media (min-width: 767.98px) and (max-width: 991.98px) {
-  .vacancy-single__content {
-    padding-left: 30px;
-  }
-
-  .vacancy-single__input .input {
-    height: 50px;
-    font-size: 16px;
-  }
-
-  .vacancy-single__input .input::-webkit-input-placeholder {
-    font-size: 16px;
-  }
-
-  .vacancy-single__input .input::-moz-placeholder {
-    font-size: 16px;
-  }
-
-  .vacancy-single__input .input:-ms-input-placeholder {
-    font-size: 16px;
-  }
-
-  .vacancy-single__input .input::-ms-input-placeholder {
-    font-size: 16px;
-  }
-
-  .vacancy-single__input .input::placeholder {
-    font-size: 16px;
-  }
-
   .vacancy-single__form {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 50%;
@@ -1229,22 +1194,6 @@
     -webkit-box-flex: 0;
     -ms-flex: 0 1 50%;
     flex: 0 1 50%;
-  }
-
-  .vacancy-single__attach {
-    min-height: 50px;
-  }
-
-  .vacancy-single__attach span {
-    font-size: 16px;
-  }
-
-  .vacancy-single__button {
-    min-height: 50px;
-  }
-
-  .vacancy-single__button span {
-    font-size: 16px;
   }
 
   .file-display span {
@@ -1263,6 +1212,18 @@
 
   .search-vacancy__button {
     height: 38px;
+  }
+}
+
+@media (min-width: 991.98px) and (max-width: 1630px) {
+  .vacancy__filter {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 450px;
+    flex: 0 0 450px;
+  }
+
+  .filter-vacancy__wrapper {
+    padding: 20px;
   }
 }
 
