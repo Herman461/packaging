@@ -1173,6 +1173,99 @@
   }
 }
 
+@media (min-width: 991.98px) and (max-width: 1630px) {
+  .vacancy-single__content {
+    padding-left: 50px;
+  }
+
+  .vacancy__filter {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 450px;
+    flex: 0 0 450px;
+  }
+
+  .filter-vacancy__wrapper {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  .vacancy-single__content {
+    padding-left: 30px;
+  }
+
+  .vacancy-single__input .input {
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .vacancy-single__input .input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+
+  .vacancy-single__input .input::-moz-placeholder {
+    font-size: 16px;
+  }
+
+  .vacancy-single__input .input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+
+  .vacancy-single__input .input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+
+  .vacancy-single__input .input::placeholder {
+    font-size: 16px;
+  }
+
+  .vacancy-single__form {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+  }
+
+  .vacancy-single__content {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+  }
+
+  .vacancy-single__attach {
+    min-height: 50px;
+  }
+
+  .vacancy-single__attach span {
+    font-size: 16px;
+  }
+
+  .vacancy-single__button {
+    min-height: 50px;
+  }
+
+  .vacancy-single__button span {
+    font-size: 16px;
+  }
+
+  .file-display span {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 767.98px) and (max-width: 1630px) {
+  .card-vacancy {
+    max-width: none;
+  }
+
+  .search-vacancy__input {
+    height: 50px;
+  }
+
+  .search-vacancy__button {
+    height: 38px;
+  }
+}
+
 @media (any-hover: hover) {
   .vacancy-single__attach:hover b {
     color: #fff;
