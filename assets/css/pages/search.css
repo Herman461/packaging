@@ -420,24 +420,45 @@
   }
 }
 
-@media (max-width: 467.98px) {
+@media (max-width: 767.98px) {
   .header-search__input input {
-    padding-left: 40px;
-    padding-right: 110px;
-    font-size: 14px;
+    min-height: 40px;
+  }
+
+  .header-search__input input {
+    padding-left: 32px;
   }
 
   .header-search__icon {
+    width: 36px;
     height: 40px;
   }
 
+  .header-search__icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
   .header-search__clear {
-    right: 140px;
+    right: 135px;
+  }
+
+  .header-search__clear svg {
+    height: 16px;
+    width: 16px;
   }
 
   .header-search__button {
+    right: 58px;
     height: 32px;
     font-size: 12px;
+  }
+}
+
+@media (max-width: 467.98px) {
+  .header-search__input input {
+    padding-right: 105px;
+    font-size: 14px;
   }
 
   .item-found__title {
