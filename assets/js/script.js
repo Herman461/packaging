@@ -219,6 +219,8 @@ if (tabContent.length > 0)  {
 	});
 
 }
+
+
 // Модальные окна
 window.addEventListener('click', function(e) {
 	if (e.target.closest('[data-modal-link]')) {
