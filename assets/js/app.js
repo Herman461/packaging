@@ -590,4 +590,35 @@ window.addEventListener('DOMContentLoaded', function() {
             },
         })
     }
+
+    if (document.querySelector('.slider-base-equipment-tech-block__body')) {
+        const currentEl = document.querySelector('.slider-base-equipment-tech-block__counter')
+        const progressFill = document.querySelector('.slider-base-equipment-tech-block__progress-fill')
+
+        const equipmentTechSlider = new Swiper(document.querySelector('.slider-base-equipment-tech-block__body'), {
+            spaceBetween: 30,
+            slidesPerView: 1,
+            speed: 800,
+            on: {
+                init(swiper) {
+                    updateUI(swiper);
+                },
+                slideChange(swiper) {
+                    updateUI(swiper);
+                },
+            },
+        })
+
+        function updateUI(swiper) {
+            const total = swiper.slides.length
+            const current = swiper.realIndex + 1
+
+
+            currentEl.textContent = String(current).padStart(2, '0')
+
+            const progress = (current / total) * 100
+            progressFill.style.width = `${progress}%`
+        }
+
+    }
 })
