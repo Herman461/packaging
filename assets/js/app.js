@@ -599,6 +599,10 @@ window.addEventListener('DOMContentLoaded', function() {
             spaceBetween: 30,
             slidesPerView: 1,
             speed: 800,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
             on: {
                 init(swiper) {
                     updateUI(swiper);
