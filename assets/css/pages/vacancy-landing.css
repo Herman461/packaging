@@ -654,6 +654,10 @@
   font-size: 32px;
 }
 
+.base-vacancy-container {
+  max-width: 1180px !important;
+}
+
 @media (min-width: 576.98px) {
   .vacancy-what__image {
     -webkit-box-flex: 0;
