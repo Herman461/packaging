@@ -2,15 +2,13 @@ window.addEventListener('DOMContentLoaded', function () {
     if (document.querySelector('.vacancy-gallery__slider')) {
         new Swiper(document.querySelector('.vacancy-gallery__slider'), {
             spaceBetween: 15,
-            slidesPerView: 1.2,
+            slidesPerView: 1.25,
             speed: 800,
             breakpoints: {
                 991.98: {
                     spaceBetween: 25,
-                },
-                567.98: {
                     slidesPerView: 2,
-                }
+                },
             },
             navigation: {
                 nextEl: document.querySelector('.vacancy-gallery__button_next'),
@@ -59,6 +57,30 @@ window.addEventListener('DOMContentLoaded', function () {
             }
         })
     }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href');
+            const targetEl = document.querySelector(targetId);
+
+            if (!targetEl) return;
+
+            e.preventDefault();
+
+            const isMobile = window.innerWidth <= 991;
+            const header = document.querySelector('.header');
+            const headerHeight = isMobile && header ? header.offsetHeight : 0;
+
+            const targetPosition =
+                targetEl.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        });
+    });
+
 })
 
 
