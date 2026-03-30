@@ -7,6 +7,10 @@
   padding-bottom: 80px;
 }
 
+.vacancy-leader {
+  background: #fff;
+}
+
 .vacancy-leader__title {
   font-size: 36px;
   line-height: 110%;
@@ -226,7 +230,11 @@
 }
 
 .vacancy-advantages__item {
-  margin-bottom: 24px;
+  margin-bottom: 15px;
+}
+
+.vacancy-advantages__item:last-child {
+  margin-bottom: 0;
 }
 
 .item-vacancy-advantages__body {
@@ -234,6 +242,7 @@
   padding: 40px 30px;
   border-radius: 40px;
   background: #fff;
+  border: 1px solid #D9D9D9;
 }
 
 .item-vacancy-advantages__title {
@@ -251,6 +260,31 @@
 
 .vacancy-steps {
   background: #fff;
+}
+
+.vacancy-steps_t {
+  padding-top: 0 !important;
+}
+
+.vacancy-steps_b {
+  padding-bottom: 20px !important;
+}
+
+.vacancy-steps__text {
+  font-size: 20px;
+  max-width: 919px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.vacancy-steps__text p {
+  margin-bottom: 15px;
+}
+
+.vacancy-steps__text p:last-child {
+  margin-bottom: 0;
 }
 
 .vacancy-steps__title {
@@ -419,7 +453,6 @@
 
 .vacancy-what {
   background: #fff;
-  padding-top: 80px;
   padding-bottom: 112px;
 }
 
@@ -436,12 +469,20 @@
   margin: 0 auto 45px;
 }
 
+.vacancy-what__items:last-child {
+  margin-bottom: 0;
+}
+
 .vacancy-what__arrow svg {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   color: #0032B1;
   width: 20px;
   height: 20px;
+}
+
+.vacancy-what__gallery {
+  margin-bottom: 80px;
 }
 
 .vacancy-what__button {
@@ -565,18 +606,6 @@
   position: relative;
 }
 
-.vacancy-intro::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 450px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 49, 170, 0)), to(#1131AA));
-  background: linear-gradient(180deg, rgba(17, 49, 170, 0) 0%, #1131AA 100%);
-  bottom: 0;
-  z-index: 2;
-}
-
 .vacancy-intro__video {
   position: absolute;
   top: 0;
@@ -611,7 +640,7 @@
 }
 
 .vacancy-intro__body {
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
 .vacancy-intro__label {
@@ -655,11 +684,164 @@
   line-height: 120%;
   text-align: center;
   color: #0032B1;
-  font-size: 32px;
+  font-size: 30px;
+}
+
+.vacancy-intro-block__text p {
+  margin-bottom: 10px;
 }
 
 .base-vacancy-container {
   max-width: 1180px !important;
+}
+
+.vacancy-single_offset {
+  padding-top: 80px !important;
+  padding-bottom: 110px !important;
+}
+
+.vacancy-save {
+  position: relative;
+  overflow: hidden;
+}
+
+.vacancy-save__container::after {
+  content: "";
+  display: block;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1131AA), to(rgba(17, 49, 170, 0)));
+  background: linear-gradient(180deg, #1131AA 0%, rgba(17, 49, 170, 0) 100%);
+  position: absolute;
+  top: -138px;
+  right: 0;
+  width: 1596px;
+  height: 2372px;
+}
+
+.vacancy-save__title {
+  font-size: 44px;
+  margin-bottom: 36px;
+  color: #fff;
+}
+
+.vacancy-save__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+  object-position: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.vacancy-save__content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 3;
+}
+
+.vacancy-save__text {
+  color: #fff;
+  font-size: 20px;
+}
+
+.vacancy-inspiration {
+  background: #fff;
+}
+
+.vacancy-inspiration__title {
+  text-align: center;
+  font-size: 44px;
+  margin-bottom: 36px;
+}
+
+.vacancy-inspiration__text {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 60px;
+  max-width: 930px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.vacancy-inspiration__video video {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  height: 968px;
+}
+
+.vacancy-contacts {
+  padding-top: 65px;
+  padding-bottom: 45px;
+}
+
+.vacancy-contacts__title {
+  font-size: 44px;
+  margin-bottom: 38px;
+  text-align: center;
+}
+
+.item-vacancy-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.item-vacancy-contacts__icon {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 32px;
+  flex: 0 0 32px;
+  margin-right: 16px;
+}
+
+.item-vacancy-contacts__icon svg {
+  fill: #0032B1;
+  width: 32px;
+  height: 32px;
+}
+
+.item-vacancy-contacts__icon.stroke {
+  color: #0032B1;
+}
+
+.item-vacancy-contacts__title {
+  font-size: 24px;
+  margin-bottom: 14px;
+  font-weight: 700;
+  line-height: 110%;
+  font-family: Nekst;
+  color: #0032B1;
+}
+
+.item-vacancy-contacts__phone {
+  font-size: 24px;
+  line-height: 110%;
+  margin-bottom: 10px;
+  font-family: Nekst;
+  color: #444444;
+}
+
+.item-vacancy-contacts__phone:last-child {
+  margin-bottom: 0;
+}
+
+.item-vacancy-contacts__content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.item-vacancy-contacts__location p {
+  font-family: Nekst;
+  margin-bottom: 8px;
+  line-height: 110%;
+  font-size: 18px;
+}
+
+.item-vacancy-contacts__location p:last-child {
+  margin-bottom: 0;
 }
 
 @media (min-width: 576.98px) {
@@ -674,6 +856,22 @@
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
+  }
+
+  .vacancy-contacts__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+
+  .vacancy-contacts__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+    padding: 0 10px;
   }
 }
 
@@ -723,22 +921,6 @@
     padding: 0 12px;
   }
 
-  .vacancy-advantages__items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: 0 -12px;
-  }
-
-  .vacancy-advantages__item {
-    padding: 0 12px;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 1 50%;
-    flex: 0 1 50%;
-  }
-
   .slide-vacancy-steps__content {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
@@ -768,6 +950,43 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+
+  .vacancy-save__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 513px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
+  .vacancy-save__title {
+    max-width: 496px;
+  }
+
+  .vacancy-save__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 4;
+  }
+
+  .vacancy-save__content {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+    padding-left: 50px;
+  }
+
+  .vacancy-save__text {
+    max-width: 565px;
   }
 }
 
@@ -849,6 +1068,12 @@
   .slide-vacancy-steps__image img {
     border-radius: 40px;
   }
+
+  .vacancy-contacts__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 25%;
+    flex: 0 1 25%;
+  }
 }
 
 @media (min-width: 1630px) {
@@ -922,6 +1147,14 @@
     font-size: calc(24px + 12 * (100vw - 320px) / 1550);
   }
 
+  .vacancy-steps__text {
+    font-size: calc(18px + 2 * (100vw - 320px) / 1550);
+  }
+
+  .vacancy-steps__text {
+    margin-bottom: calc(20px + 16 * (100vw - 320px) / 1550);
+  }
+
   .vacancy-steps__title {
     font-size: calc(24px + 20 * (100vw - 320px) / 1550);
   }
@@ -951,10 +1184,6 @@
   }
 
   .vacancy-what {
-    padding-top: calc(40px + 40 * (100vw - 320px) / 1550);
-  }
-
-  .vacancy-what {
     padding-bottom: calc(40px + 72 * (100vw - 320px) / 1550);
   }
 
@@ -966,6 +1195,10 @@
     margin-bottom: calc(40px + 20 * (100vw - 320px) / 1550);
   }
 
+  .vacancy-what__gallery {
+    margin-bottom: calc(40px + 40 * (100vw - 320px) / 1550);
+  }
+
   .vacancy-what__button span {
     font-size: calc(16px + 8 * (100vw - 320px) / 1550);
   }
@@ -975,7 +1208,71 @@
   }
 
   .vacancy-intro-block__text {
-    font-size: calc(20px + 12 * (100vw - 320px) / 1550);
+    font-size: calc(20px + 10 * (100vw - 320px) / 1550);
+  }
+
+  .vacancy-save__title {
+    font-size: calc(22px + 22 * (100vw - 320px) / 1550);
+  }
+
+  .vacancy-save__title {
+    margin-bottom: calc(20px + 16 * (100vw - 320px) / 1550);
+  }
+
+  .vacancy-save__text {
+    font-size: calc(16px + 4 * (100vw - 320px) / 1550);
+  }
+
+  .vacancy-inspiration__title {
+    font-size: calc(24px + 20 * (100vw - 320px) / 1550);
+  }
+
+  .vacancy-inspiration__title {
+    margin-bottom: calc(20px + 16 * (100vw - 320px) / 1550);
+  }
+
+  .vacancy-inspiration__text {
+    font-size: calc(16px + 4 * (100vw - 320px) / 1550);
+  }
+
+  .vacancy-inspiration__text {
+    margin-bottom: calc(30px + 30 * (100vw - 320px) / 1550);
+  }
+
+  .vacancy-inspiration__video video {
+    height: calc(400px + 568 * (100vw - 320px) / 1550);
+  }
+
+  .vacancy-contacts {
+    padding-top: calc(40px + 25 * (100vw - 320px) / 1550);
+  }
+
+  .vacancy-contacts {
+    padding-bottom: calc(30px + 15 * (100vw - 320px) / 1550);
+  }
+
+  .vacancy-contacts__title {
+    font-size: calc(24px + 20 * (100vw - 320px) / 1550);
+  }
+
+  .vacancy-contacts__title {
+    margin-bottom: calc(30px + 8 * (100vw - 320px) / 1550);
+  }
+
+  .item-vacancy-contacts__title {
+    font-size: calc(18px + 6 * (100vw - 320px) / 1550);
+  }
+
+  .item-vacancy-contacts__title {
+    margin-bottom: calc(8px + 6 * (100vw - 320px) / 1550);
+  }
+
+  .item-vacancy-contacts__phone {
+    font-size: calc(18px + 6 * (100vw - 320px) / 1550);
+  }
+
+  .item-vacancy-contacts__location p {
+    font-size: calc(14px + 4 * (100vw - 320px) / 1550);
   }
 }
 
@@ -1019,6 +1316,19 @@
 
   .vacancy-intro__container {
     height: 100vh;
+  }
+
+  .vacancy-single_offset {
+    padding-bottom: 60px !important;
+    padding-top: 60px !important;
+  }
+
+  .vacancy-contacts {
+    padding-bottom: 20px;
+  }
+
+  .vacancy-contacts__item {
+    margin-bottom: 20px;
   }
 }
 
@@ -1100,6 +1410,28 @@
     width: 15px;
     height: 15px;
   }
+
+  .vacancy-save__container::after {
+    top: 100px;
+  }
+
+  .vacancy-save__image {
+    margin: 0 -15px;
+    position: relative;
+    z-index: 5;
+  }
+
+  .item-vacancy-contacts__icon {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 28px;
+    flex: 0 0 28px;
+    margin-right: 10px;
+  }
+
+  .item-vacancy-contacts__icon svg {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 @media (max-width: 576.98px) {
@@ -1131,5 +1463,10 @@
 @media (min-width: 767.98px) and (max-width: 991.98px) {
   .slide-vacancy-steps__image {
     height: 160px;
+  }
+
+  .vacancy-save__image img {
+    -o-object-position: 62% center;
+    object-position: 62% center;
   }
 }
