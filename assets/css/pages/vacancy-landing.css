@@ -12,14 +12,13 @@
 }
 
 .vacancy-leader__title {
-  font-size: 36px;
+  font-size: 44px;
   line-height: 110%;
   max-width: 969px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
-  font-weight: 500;
 }
 
 .vacancy-leader__image {
@@ -47,12 +46,14 @@
   color: #003DA6;
   font-size: 24px;
   line-height: 120%;
+  font-weight: 500;
 }
 
 .vacancy-leader__text {
   max-width: 1064px;
   margin: 0 auto;
   text-align: center;
+  font-weight: 500;
   font-size: 24px;
 }
 
@@ -193,7 +194,6 @@
   font-size: 44px;
   line-height: 110%;
   color: #0032B1;
-  font-weight: 500;
   margin-bottom: 40px;
 }
 
@@ -222,6 +222,7 @@
   max-width: 683px;
   margin-left: auto;
   margin-right: auto;
+  font-weight: 500;
   font-size: 20px;
 }
 
@@ -249,7 +250,7 @@
   font-family: Nekst;
   font-size: 36px;
   margin-bottom: 16px;
-  font-weight: 500;
+  font-weight: 400;
   color: #0032B1;
   line-height: 110%;
 }
@@ -293,7 +294,7 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 40px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 44px;
 }
 
@@ -352,7 +353,6 @@
 .slide-vacancy-steps__title {
   font-size: 36px;
   font-family: Nekst;
-  font-weight: 500;
   color: #0032B1;
   margin-bottom: 16px;
 }
@@ -436,12 +436,16 @@
 }
 
 .join-us-vacancy-steps__title {
-  font-size: 36px;
+  font-size: 44px;
   color: #0032B1;
   margin-bottom: 40px;
-  font-weight: 500;
+  font-weight: 400;
   font-family: Nekst;
   text-align: center;
+}
+
+.join-us-vacancy-steps__title_s {
+  font-size: 36px;
 }
 
 .join-us-vacancy-steps__button {
@@ -460,8 +464,6 @@
   font-size: 44px;
   margin-bottom: 60px;
   text-align: center;
-  font-weight: 500;
-  font-family: Cera;
 }
 
 .vacancy-what__items {
@@ -624,7 +626,7 @@
 }
 
 .vacancy-intro__container {
-  min-height: 500px;
+  min-height: 400px;
   height: calc(100vh - 80px);
   position: relative;
   z-index: 5;
@@ -769,7 +771,8 @@
   object-fit: cover;
   -o-object-position: center;
   object-position: center;
-  height: 968px;
+  min-height: 400px;
+  height: calc(100vh - 80px);
 }
 
 .vacancy-contacts {
@@ -1077,6 +1080,14 @@
 }
 
 @media (min-width: 1630px) {
+  .item-vacancy-advantages__text {
+    font-size: 16px;
+  }
+
+  .slide-vacancy-steps__text {
+    font-size: 16px;
+  }
+
   .vacancy-gallery__image {
     padding-bottom: 64%;
   }
@@ -1092,7 +1103,7 @@
   }
 
   .vacancy-leader__title {
-    font-size: calc(20px + 16 * (100vw - 320px) / 1550);
+    font-size: calc(20px + 24 * (100vw - 320px) / 1550);
   }
 
   .vacancy-leader__label {
@@ -1176,6 +1187,10 @@
   }
 
   .join-us-vacancy-steps__title {
+    font-size: calc(20px + 24 * (100vw - 320px) / 1550);
+  }
+
+  .join-us-vacancy-steps__title_s {
     font-size: calc(20px + 16 * (100vw - 320px) / 1550);
   }
 
@@ -1239,10 +1254,6 @@
     margin-bottom: calc(30px + 30 * (100vw - 320px) / 1550);
   }
 
-  .vacancy-inspiration__video video {
-    height: calc(400px + 568 * (100vw - 320px) / 1550);
-  }
-
   .vacancy-contacts {
     padding-top: calc(40px + 25 * (100vw - 320px) / 1550);
   }
@@ -1273,6 +1284,16 @@
 
   .item-vacancy-contacts__location p {
     font-size: calc(14px + 4 * (100vw - 320px) / 1550);
+  }
+}
+
+@media (max-width: 1100.98px) {
+  .vacancy-intro__container {
+    height: calc(100vh - 65px);
+  }
+
+  .vacancy-inspiration__video video {
+    height: calc(100vh - 65px);
   }
 }
 
@@ -1312,10 +1333,6 @@
 
   .vacancy-gallery__image img {
     border-radius: 20px;
-  }
-
-  .vacancy-intro__container {
-    height: 100vh;
   }
 
   .vacancy-single_offset {
