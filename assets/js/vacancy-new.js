@@ -7,7 +7,8 @@ window.addEventListener('DOMContentLoaded', function () {
             breakpoints: {
                 991.98: {
                     spaceBetween: 25,
-                    slidesPerView: 2,
+                    // slidesPerView: 2,
+                    slidesPerView: 1.89,
                 },
             },
             navigation: {
@@ -81,6 +82,28 @@ window.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    const header = document.querySelector('.vacancy-header')
+
+    fixHeader()
+    function fixHeader() {
+        if (document.documentElement.scrollTop > 10 && !header.classList.contains('fix')) {
+            header.classList.add('fix')
+        }
+        if (document.documentElement.scrollTop <= 0 && header.classList.contains('fix')) {
+            header.classList.remove('fix')
+        }
+    }
+
+    window.addEventListener('scroll', fixHeader)
+
+
+    window.addEventListener('click', function (e) {
+        if (e.target.closest('.vacancy-inspiration__action')) {
+            const videoButton = e.target.closest('.vacancy-inspiration__action')
+            videoButton.classList.add('hidden')
+            videoButton.closest('.vacancy-inspiration__video').querySelector('video').play()
+        }
+    })
 })
 
 
