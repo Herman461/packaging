@@ -7,59 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>packaging systems</title>
     <link rel="icon" href="assets/images/favicon.svg">
-    <link rel="stylesheet" href="assets/css/style.css?_v=20260417104829">
-    <link rel="stylesheet" href="assets/css/pages/search.css?_v=20260417104829">
-    <link rel="stylesheet" href="assets/css/pages/vacancy.css?_v=20260417104829">
-    <link rel="stylesheet" href="assets/css/pages/vacancy-landing.css?_v=20260417104829">
-    <script src="assets/js/main.bundle.js?_v=20260417104829"></script>
+    <link rel="stylesheet" href="assets/css/style.css?_v=20260422064115">
+    <link rel="stylesheet" href="assets/css/pages/search.css?_v=20260422064115">
+    <link rel="stylesheet" href="assets/css/pages/vacancy.css?_v=20260422064115">
+    <link rel="stylesheet" href="assets/css/pages/vacancy-landing.css?_v=20260422064115">
+    <script src="assets/js/main.bundle.js?_v=20260422064115"></script>
 </head>
 
 <body>
     <div class="page">
         <div class="vacancy-header">
-            <div class="vacancy-header__container container">
+            <div class="vacancy-header__container base-vacancy-container container">
                 <a href="" class="vacancy-header__logo">
                     <img src="assets/images/vacancy-v2/logo-white.svg" alt="">
+                    <img src="assets/images/logo.svg" alt="">
                 </a>
-                <div class="vacancy-header__slogan">Первые в своём деле</div>
-                <div class="vacancy-header__action">
-                    <span>Работа и карьера</span>
-                    <div class="vacancy-header__burger">
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
+                <a href="" class="vacancy-header__action">
+                    Работа и карьера
+                </a>
             </div>
         </div>
 
         <main class="main">
             <div class="vacancy-intro">
                 <div class="vacancy-intro__video">
-                    <video autoplay loop muted playsinline preload="auto" src="assets/videos/vacancy_intro.mp4"></video>
+
+                    <video autoplay loop muted playsinline preload="auto" src="https://www-dev.packaging-systems.ru/layout/packaging/assets/videos/vacancy_intro.mp4?v=2"></video>
                 </div>
-                <div class="vacancy-intro__container container">
+                <div class="vacancy-intro__container base-vacancy-container container">
                     <div class="vacancy-intro__body">
-                        <div class="vacancy-intro__label">Первые в своём деле</div>
+                        <div class="vacancy-intro__label" id="introText">
+                            «Упаковочные системы» — крупнейший в России
+                            производитель комбинированной картонной
+                            упаковки.
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="intro" class="vacancy-intro-block base-vacancy-block">
-                <div class="vacancy-intro-block__container container">
-                    <div class="vacancy-intro-block__text">
-                        <p>
-                            «Упаковочные системы» — крупнейший производитель комбинированной картонной упаковки.
-                        </p>
-                        <p>
-                            Мы производим и поставляем оборудование, а также осуществляем техническое обслуживание производственных линий пищевых&nbsp;предприятий.
-                            <br>Мы сохраняем качество и пользу продуктов питания для миллионов людей!
-                        </p>
-                        <p>
-                            И мы — первые в своём деле!
-                        </p>
-                    </div>
-                </div>
-            </div>
+
             <div id="vacancies" class="vacancy-single vacancy-single_offset container">
+                <div class="vacancy__title base-title">Актуальные вакансии</div>
                 <div class="vacancy">
                     <form action="#" data-spoilers="" class="vacancy__filter filter-vacancy">
                         <div class="filter-vacancy__top">
@@ -310,6 +297,9 @@
                         </div>
                     </div>
 
+                </div>
+                <div class="vacancy__bottom">
+                    <a href="" class="vacancy__button base-button base-button_fill">Другие вакансии</a>
                 </div>
             </div>
             <div class="vacancy-leader base-vacancy-block">
@@ -616,7 +606,7 @@
                     </div>
                     <div class="vacancy-inspiration__video">
                         <div class="vacancy-inspiration__action">Смотреть видео</div>
-                        <video muted playsinline src="assets/videos/vacancy_intro.mp4"></video>
+                        <video muted playsinline src="https://www-dev.packaging-systems.ru/layout/packaging/assets/videos/hr_video.mp4"></video>
                     </div>
                 </div>
             </div>
@@ -949,12 +939,46 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20260417104829"></script>
-    <script src="assets/js/script.js?_v=20260417104829"></script>
-    <script src="assets/js/app.js?_v=20260417104829"></script>
-    <script src="assets/js/vacancy.js?_v=20260417104829"></script>
-    <script src="assets/js/vacancy-new.js?_v=20260417104829"></script>
-    <script src="assets/js/search.js?_v=20260417104829"></script>
+    <script>
+        const texts = [
+            `«Упаковочные системы» — крупнейший в России
+  производитель комбинированной картонной упаковки.`,
+
+            `Мы производим и поставляем оборудование,
+  а также осуществляем техническое обслуживание
+  производственных линий пищевых предприятий.`,
+
+            `Мы сохраняем качество и пользу продуктов питания для миллионов людей!
+  И мы — первые в своём деле!*`
+        ]
+
+        let index = 0
+        const el = document.getElementById('introText')
+
+        setInterval(function () {
+            el.classList.add('fade-out')
+
+            setTimeout(function () {
+                index = (index + 1) % texts.length
+                el.innerHTML = texts[index]
+
+                el.classList.remove('fade-out')
+                el.classList.add('fade-in')
+
+                setTimeout(function() {
+                    el.classList.remove('fade-in')
+                }, 500)
+
+            }, 500)
+
+        }, 2000)
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20260422064115"></script>
+    <script src="assets/js/script.js?_v=20260422064115"></script>
+    <script src="assets/js/app.js?_v=20260422064115"></script>
+    <script src="assets/js/vacancy.js?_v=20260422064115"></script>
+    <script src="assets/js/vacancy-new.js?_v=20260422064115"></script>
+    <script src="assets/js/search.js?_v=20260422064115"></script>
 </body>
 
 </html>

@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', function () {
             spaceBetween: 15,
             slidesPerView: 1.25,
             speed: 800,
+            loop: true,
             breakpoints: {
                 991.98: {
                     spaceBetween: 25,
@@ -101,6 +102,7 @@ window.addEventListener('DOMContentLoaded', function () {
         if (e.target.closest('.vacancy-inspiration__action')) {
             const videoButton = e.target.closest('.vacancy-inspiration__action')
             videoButton.classList.add('hidden')
+            videoButton.closest('.vacancy-inspiration__video').classList.add('active')
             videoButton.closest('.vacancy-inspiration__video').querySelector('video').play()
         }
     })

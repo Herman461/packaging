@@ -7,18 +7,21 @@ const menu = document.querySelector('.base-header')
 let lock = false
 const burger = document.querySelector('.hamburger-mobile')
 
-burger.addEventListener('click', function() {
+if (burger) {
+    burger.addEventListener('click', function() {
 
-    if (lock) return
+        if (lock) return
 
-    lock = true
+        lock = true
 
-    toggleMenu()
+        toggleMenu()
 
-    setTimeout(() => {
-        lock = false
-    }, delay)
-})
+        setTimeout(() => {
+            lock = false
+        }, delay)
+    })
+}
+
 
 function toggleMenu() {
     burger.classList.toggle('active')
