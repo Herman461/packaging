@@ -53,7 +53,8 @@
   max-width: 1064px;
   margin: 0 auto;
   text-align: center;
-  font-weight: 500;
+  font-weight: 400;
+  line-height: 120%;
   font-size: 24px;
 }
 
@@ -451,7 +452,7 @@
 
 .join-us-vacancy-steps__button {
   font-family: Cera;
-  font-weight: 700;
+  font-weight: 400;
   color: #fff;
   font-size: 24px;
 }
@@ -615,6 +616,20 @@
   position: relative;
 }
 
+.vacancy-intro__button {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+}
+
+.vacancy-intro__button svg {
+  color: #fff;
+  height: 17px;
+  width: 35px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
 .vacancy-intro::before {
   content: "";
   position: absolute;
@@ -660,14 +675,19 @@
 }
 
 .vacancy-intro__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
   padding-bottom: 80px;
 }
 
 .vacancy-intro__label {
   margin-top: 25px;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  margin-right: 50px;
   max-width: 1106px;
   font-size: 46px;
   font-family: Nekst;
@@ -867,23 +887,51 @@
   text-align: center;
 }
 
+.vacancy-contacts__item_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
 .item-vacancy-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+.item-vacancy-contacts__logo {
+  margin-bottom: 27px;
+}
+
+.item-vacancy-contacts__logo img {
+  max-width: 152px;
+}
+
+.item-vacancy-contacts__email {
+  font-size: 16px;
+  color: #0032B1;
+  font-family: "Nekst";
+  text-decoration: underline;
+}
+
 .item-vacancy-contacts__icon {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 32px;
-  flex: 0 0 32px;
-  margin-right: 16px;
+  -ms-flex: 0 0 24px;
+  flex: 0 0 24px;
+  margin-right: 8px;
 }
 
 .item-vacancy-contacts__icon svg {
   fill: #0032B1;
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 .item-vacancy-contacts__icon.stroke {
@@ -891,7 +939,7 @@
 }
 
 .item-vacancy-contacts__title {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 14px;
   line-height: 110%;
   font-family: Nekst;
@@ -899,8 +947,8 @@
 }
 
 .item-vacancy-contacts__phone {
-  font-size: 24px;
-  line-height: 110%;
+  font-size: 18px;
+  line-height: 130%;
   margin-bottom: 10px;
   font-family: Nekst;
   color: #444444;
@@ -919,8 +967,8 @@
 .item-vacancy-contacts__location p {
   font-family: Nekst;
   margin-bottom: 8px;
-  line-height: 110%;
   font-size: 18px;
+  line-height: 130%;
 }
 
 .item-vacancy-contacts__location p:last-child {
@@ -1081,7 +1129,7 @@
 .vacancy__button {
   min-width: 292px;
   font-family: Cera;
-  font-weight: 700;
+  font-weight: 400;
   color: #fff;
   font-size: 24px;
 }
@@ -1512,7 +1560,7 @@
   }
 
   .item-vacancy-contacts__title {
-    font-size: calc(18px + 6 * (100vw - 320px) / 1550);
+    font-size: calc(16px + 4 * (100vw - 320px) / 1550);
   }
 
   .item-vacancy-contacts__title {
@@ -1520,11 +1568,11 @@
   }
 
   .item-vacancy-contacts__phone {
-    font-size: calc(18px + 6 * (100vw - 320px) / 1550);
+    font-size: calc(16px + 2 * (100vw - 320px) / 1550);
   }
 
   .item-vacancy-contacts__location p {
-    font-size: calc(14px + 4 * (100vw - 320px) / 1550);
+    font-size: calc(16px + 2 * (100vw - 320px) / 1550);
   }
 
   .note-vacancy {
@@ -1719,14 +1767,13 @@
 
   .item-vacancy-contacts__icon {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 28px;
-    flex: 0 0 28px;
-    margin-right: 10px;
+    -ms-flex: 0 0 20px;
+    flex: 0 0 20px;
   }
 
   .item-vacancy-contacts__icon svg {
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
   }
 
   .vacancy__title {
@@ -1791,6 +1838,10 @@
   .vacancy-inspiration__action:hover {
     background: #0032B1;
     color: #fff;
+  }
+
+  .item-vacancy-contacts__email:hover {
+    text-decoration: none;
   }
 
   .note-vacancy__text a:hover {

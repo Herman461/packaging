@@ -11,9 +11,12 @@ window.addEventListener('DOMContentLoaded', function () {
             searchHeaderResult.classList.remove('active')
         }
     }
-    searchHeaderInput.addEventListener('input', function (e) {
-        handleChangeInputSearch(e.target.value)
-    })
+    if (searchHeaderInput) {
+        searchHeaderInput.addEventListener('input', function (e) {
+            handleChangeInputSearch(e.target.value)
+        })
+    }
+
 
     const searchHeaderOpenButton = document.querySelector('.header-search__search')
     const searchHeaderCloseButton = document.querySelector('.header-search__close')

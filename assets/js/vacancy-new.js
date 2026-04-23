@@ -99,12 +99,19 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
     window.addEventListener('click', function (e) {
-        if (e.target.closest('.vacancy-inspiration__action')) {
-            const videoButton = e.target.closest('.vacancy-inspiration__action')
-            videoButton.classList.add('hidden')
-            videoButton.closest('.vacancy-inspiration__video').classList.add('active')
-            videoButton.closest('.vacancy-inspiration__video').querySelector('video').play()
-        }
+        const action = e.target.closest('.vacancy-inspiration__action');
+        if (!action) return;
+
+        const wrapper = action.closest('.vacancy-inspiration__video');
+        const video = wrapper.querySelector('video');
+
+        action.classList.add('hidden');
+        wrapper.classList.add('active');
+
+        video.muted = false
+        video.play();
+
+        video.setAttribute('controls', true);
     })
 })
 
