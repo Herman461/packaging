@@ -55,7 +55,7 @@
   text-align: center;
   font-weight: 400;
   line-height: 120%;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .vacancy-standard {
@@ -186,7 +186,7 @@
 
 .vacancy-about {
   padding-top: 80px;
-  padding-bottom: 40px;
+  padding-bottom: 52px;
 }
 
 .vacancy-about__title {
@@ -281,6 +281,10 @@
   margin-bottom: 36px;
 }
 
+.vacancy-steps__text_b {
+  margin-bottom: 50px;
+}
+
 .vacancy-steps__text p {
   margin-bottom: 15px;
 }
@@ -302,6 +306,14 @@
 .vacancy-steps__slider {
   overflow: hidden;
   margin-bottom: 72px;
+}
+
+.vacancy-steps_intro {
+  background: #F1F1F1;
+}
+
+.vacancy-steps_intro .vacancy-steps__title {
+  margin-bottom: 50px;
 }
 
 .slide-vacancy-steps {
@@ -446,15 +458,12 @@
   text-align: center;
 }
 
-.join-us-vacancy-steps__title_s {
-  font-size: 36px;
-}
-
 .join-us-vacancy-steps__button {
   font-family: Cera;
   font-weight: 400;
   color: #fff;
   font-size: 24px;
+  min-width: 292px;
 }
 
 .vacancy-what {
@@ -550,6 +559,37 @@
   border-radius: 20px;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.vacancy-what__text {
+  max-width: 716px;
+}
+
+.vacancy-what__text p {
+  margin-bottom: 25px;
+}
+
+.vacancy-what__text p:last-child {
+  margin-bottom: 0;
+}
+
+.vacancy-what__text small {
+  font-size: 12px;
+  line-height: 140%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.vacancy-what__text small a {
+  word-break: break-all;
+  line-height: 1;
+  color: #444;
+  opacity: 0.5;
+  text-decoration: underline;
+}
+
+.vacancy-what__item:first-child .vacancy-what__text {
+  max-width: 720px;
 }
 
 .vacancy-gallery__buttons {
@@ -887,6 +927,10 @@
   text-align: center;
 }
 
+.vacancy-contacts__items {
+  padding-bottom: 80px;
+}
+
 .vacancy-contacts__item_main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -906,19 +950,8 @@
   display: flex;
 }
 
-.item-vacancy-contacts__logo {
-  margin-bottom: 27px;
-}
-
 .item-vacancy-contacts__logo img {
   max-width: 152px;
-}
-
-.item-vacancy-contacts__email {
-  font-size: 16px;
-  color: #0032B1;
-  font-family: "Nekst";
-  text-decoration: underline;
 }
 
 .item-vacancy-contacts__icon {
@@ -1132,6 +1165,27 @@
   font-weight: 400;
   color: #fff;
   font-size: 24px;
+}
+
+.bottom-vacancy-contacts {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bottom-vacancy-contacts__copyright {
+  color: #0032B1;
+  font-family: "Cera";
+  font-size: 18px;
+  line-height: 110%;
+}
+
+.bottom-vacancy-contacts__link {
+  color: #0032B1;
+  font-family: "Cera";
+  font-size: 18px;
+  line-height: 110%;
 }
 
 @media (min-width: 576.98px) {
@@ -1365,10 +1419,26 @@
     border-radius: 40px;
   }
 
+  .vacancy-what__content {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .vacancy-what__text {
+    font-size: 16px !important;
+  }
+
   .vacancy-contacts__item {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 25%;
     flex: 0 1 25%;
+  }
+
+  .bottom-vacancy-contacts {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 }
 
@@ -1400,7 +1470,7 @@
   }
 
   .vacancy-leader__text {
-    font-size: calc(18px + 6 * (100vw - 320px) / 1550);
+    font-size: calc(16px + 4 * (100vw - 320px) / 1550);
   }
 
   .vacancy-standard__body {
@@ -1455,12 +1525,20 @@
     margin-bottom: calc(20px + 16 * (100vw - 320px) / 1550);
   }
 
+  .vacancy-steps__text_b {
+    margin-bottom: calc(40px + 10 * (100vw - 320px) / 1550);
+  }
+
   .vacancy-steps__title {
     font-size: calc(24px + 20 * (100vw - 320px) / 1550);
   }
 
   .vacancy-steps__slider {
     margin-bottom: calc(40px + 32 * (100vw - 320px) / 1550);
+  }
+
+  .vacancy-steps_intro .vacancy-steps__title {
+    margin-bottom: calc(40px + 10 * (100vw - 320px) / 1550);
   }
 
   .slide-vacancy-steps__item span {
@@ -1476,11 +1554,7 @@
   }
 
   .join-us-vacancy-steps__title {
-    font-size: calc(20px + 24 * (100vw - 320px) / 1550);
-  }
-
-  .join-us-vacancy-steps__title_s {
-    font-size: calc(20px + 16 * (100vw - 320px) / 1550);
+    font-size: calc(24px + 20 * (100vw - 320px) / 1550);
   }
 
   .join-us-vacancy-steps__button {
@@ -1504,7 +1578,7 @@
   }
 
   .vacancy-what__button span {
-    font-size: calc(16px + 8 * (100vw - 320px) / 1550);
+    font-size: calc(20px + 4 * (100vw - 320px) / 1550);
   }
 
   .vacancy-intro__label {
@@ -1559,6 +1633,10 @@
     margin-bottom: calc(30px + 8 * (100vw - 320px) / 1550);
   }
 
+  .vacancy-contacts__items {
+    padding-bottom: calc(40px + 40 * (100vw - 320px) / 1550);
+  }
+
   .item-vacancy-contacts__title {
     font-size: calc(16px + 4 * (100vw - 320px) / 1550);
   }
@@ -1585,6 +1663,20 @@
 
   .vacancy__button {
     font-size: calc(16px + 8 * (100vw - 320px) / 1550);
+  }
+
+  .bottom-vacancy-contacts {
+    padding-top: calc(20px + 20 * (100vw - 320px) / 1550);
+  }
+}
+
+@media (max-width: 1200.98px) {
+  .bottom-vacancy-contacts__copyright {
+    font-size: 16px;
+  }
+
+  .bottom-vacancy-contacts__link {
+    font-size: 16px;
   }
 }
 
@@ -1620,6 +1712,14 @@
 
   .join-us-vacancy-steps__title {
     margin-bottom: 20px;
+  }
+
+  .vacancy-what__text p {
+    margin-bottom: 15px;
+  }
+
+  .vacancy-what__text p:last-child {
+    margin-bottom: 0;
   }
 
   .vacancy-gallery__image img {
@@ -1671,6 +1771,28 @@
 
   .vacancy__bottom {
     margin-top: 25px;
+  }
+
+  .bottom-vacancy-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .bottom-vacancy-contacts__copyright {
+    margin-bottom: 16px;
+  }
+
+  .bottom-vacancy-contacts__link {
+    margin-bottom: 16px;
+  }
+
+  .bottom-vacancy-contacts__link:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -1835,16 +1957,20 @@
 }
 
 @media (any-hover: hover) {
+  .vacancy-what__text small a:hover {
+    text-decoration: none;
+  }
+
   .vacancy-inspiration__action:hover {
     background: #0032B1;
     color: #fff;
   }
 
-  .item-vacancy-contacts__email:hover {
+  .note-vacancy__text a:hover {
     text-decoration: none;
   }
 
-  .note-vacancy__text a:hover {
-    text-decoration: none;
+  .bottom-vacancy-contacts__link:hover {
+    text-decoration: underline;
   }
 }
