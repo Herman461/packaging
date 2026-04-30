@@ -445,6 +445,65 @@
   font-size: 20px;
 }
 
+.modal-course-test .modal__content {
+  position: relative;
+  max-width: 563px;
+  padding: 34px 40px;
+}
+
+.modal-course-test .modal__close {
+  top: 20px;
+  right: 20px;
+}
+
+.modal-course-test__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-course-test__result {
+  font-size: 80px;
+  color: #003DA6;
+  font-family: "Nekst", sans-serif;
+}
+
+.modal-course-test__label {
+  font-size: 32px;
+  color: #003DA6;
+  font-family: "Nekst", sans-serif;
+  line-height: 123.0769230769%;
+}
+
+.modal-course-test__text {
+  font-size: 16px;
+  font-family: "Nekst", sans-serif;
+  line-height: 112.5%;
+  margin-bottom: 24px;
+}
+
+.modal-course-test__button {
+  padding: 0 32px;
+}
+
+.modal-course-test__button span {
+  white-space: nowrap;
+  font-size: 20px;
+}
+
+.modal-course-test__button_grey {
+  border-color: #D9D9D9;
+  background: #D0D0D0;
+}
+
 @media (min-width: 431.98px) {
   .chapter__content .gallery {
     display: -ms-grid;
@@ -502,6 +561,22 @@
     margin-bottom: 20px;
     margin-left: 30px;
     max-width: calc(50% - 30px);
+  }
+}
+
+@media (min-width: 567.98px) {
+  .modal-course-test__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .modal-course-test__button:first-child {
+    margin-right: 9px;
+  }
+
+  .modal-course-test__button:last-child {
+    margin-left: 9px;
   }
 }
 
@@ -744,6 +819,27 @@
 
   .chapter__button {
     width: 100%;
+  }
+
+  .modal-course-test__result {
+    font-size: 60px;
+  }
+
+  .modal-course-test__label {
+    font-size: 26px;
+  }
+
+  .modal-course-test__button {
+    width: 100%;
+    margin-bottom: 14px;
+  }
+
+  .modal-course-test__button:last-child {
+    margin-bottom: 0;
+  }
+
+  .modal-course-test__button span {
+    font-size: 18px;
   }
 }
 

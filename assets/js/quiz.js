@@ -39,10 +39,13 @@ window.addEventListener('DOMContentLoaded', function() {
 
     swiper.on('slideChange', updateQuizProgress);
 
-    document.querySelectorAll('.slide-quiz__option input[type="radio"]').forEach((radio) => {
+    document.querySelectorAll('.slide-quiz__option input[type="radio"]').forEach(function(radio) {
         radio.addEventListener('change', () => {
-            swiper.slideNext();
+            if (swiper.isEnd) {
+                document.querySelector('#open-result-modal-trigger').click()
+            } else {
+                swiper.slideNext();
+            }
         });
     });
-
 })
