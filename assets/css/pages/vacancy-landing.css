@@ -345,6 +345,15 @@
   display: flex;
 }
 
+.slide-vacancy-steps__note {
+  font-weight: 500;
+  font-family: Nekst;
+  font-size: 16px;
+  color: #0032B1;
+  margin-bottom: 16px;
+  line-height: 110%;
+}
+
 .slide-vacancy-steps__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1723,6 +1732,10 @@
   .slide-vacancy-steps {
     padding: 15px;
     border-radius: 20px;
+  }
+
+  .slide-vacancy-steps__note {
+    font-size: 14px;
   }
 
   .slide-vacancy-steps__item {
