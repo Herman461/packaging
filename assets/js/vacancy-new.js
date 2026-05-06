@@ -5,8 +5,10 @@ window.addEventListener('DOMContentLoaded', function () {
             slidesPerView: 1.25,
             speed: 800,
             loop: true,
+            initialSlide: 1,
             breakpoints: {
                 991.98: {
+                    initialSlide: 0,
                     spaceBetween: 25,
                     // slidesPerView: 2,
                     slidesPerView: 1.89,
