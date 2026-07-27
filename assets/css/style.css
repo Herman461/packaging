@@ -7891,6 +7891,20 @@ body {
   object-fit: cover;
 }
 
+.factory-responsibility--certified {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.factory-responsibility--certified .factory-responsibility__title {
+  max-width: 954px;
+  font-size: 56px;
+}
+
+.factory-responsibility--certified .factory-responsibility__text {
+  max-width: 670px;
+}
+
 .item-factory-responsibility__body {
   height: 100%;
   display: -webkit-box;
@@ -15985,6 +15999,10 @@ body {
 
   .factory-responsibility__image img {
     min-height: calc(240px + 324 * (100vw - 320px) / 1550);
+  }
+
+  .factory-responsibility--certified .factory-responsibility__title {
+    font-size: calc(28px + 28 * (100vw - 320px) / 1550);
   }
 
   .item-factory-responsibility__text {
