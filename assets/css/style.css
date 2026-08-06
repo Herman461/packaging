@@ -7493,6 +7493,40 @@ body {
   font-size: 17px;
 }
 
+.item-factory-about__icon {
+  max-width: 56px;
+  height: 56px;
+  margin-bottom: 30px;
+}
+
+.item-factory-about__icon img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+  max-height: 100%;
+}
+
+.factory-about--development .factory-about__title {
+  font-size: 56px;
+  line-height: 110%;
+}
+
+.factory-about--development .item-factory-about__text {
+  max-width: 450px;
+  font-size: 20px;
+}
+
+.factory-about--development .item-factory-about__button {
+  min-height: 62px;
+  padding: 0 23px;
+  margin-top: 42px;
+}
+
+.factory-about--development .item-factory-about__button span {
+  font-size: 20px;
+}
+
 .factory-production {
   -webkit-box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.08);
   box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.08);
@@ -7916,6 +7950,10 @@ body {
   flex-direction: column;
 }
 
+.item-factory-responsibility__button {
+  padding: 0 22px;
+}
+
 .item-factory-responsibility__text {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
@@ -7926,7 +7964,8 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
-  font-size: 17px;
+  font-size: 20px;
+  max-width: 630px;
 }
 
 .item-factory-responsibility__icon img {
@@ -12232,13 +12271,16 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: 0 -12px;
   }
 
   .factory-responsibility__item {
     -webkit-box-flex: 0;
-    -ms-flex: 0 1 33.333%;
-    flex: 0 1 33.333%;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+    margin-bottom: 20px;
     padding: 0 12px;
   }
 
@@ -12247,6 +12289,31 @@ body {
     border: 1px solid #D9D9D9;
     padding: 40px;
     min-height: 320px;
+  }
+
+  .item-factory-responsibility__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .item-factory-responsibility__bottom .item-factory-responsibility__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .item-factory-responsibility__button {
+    display: none;
+    margin-left: 15px;
+    min-height: 62px;
+    font-size: 68px;
   }
 
   .factory-guarantee__mobile-image {
@@ -15825,6 +15892,26 @@ body {
     font-size: calc(15px + 2 * (100vw - 320px) / 1550);
   }
 
+  .item-factory-about__icon {
+    margin-bottom: calc(20px + 10 * (100vw - 320px) / 1550);
+  }
+
+  .factory-about--development .factory-about__title {
+    font-size: calc(32px + 24 * (100vw - 320px) / 1550);
+  }
+
+  .factory-about--development .item-factory-about__text {
+    font-size: calc(15px + 5 * (100vw - 320px) / 1550);
+  }
+
+  .factory-about--development .item-factory-about__button {
+    margin-top: calc(20px + 22 * (100vw - 320px) / 1550);
+  }
+
+  .factory-about--development .item-factory-about__button span {
+    font-size: calc(15px + 5 * (100vw - 320px) / 1550);
+  }
+
   .factory-production {
     padding-bottom: calc(40px + 120 * (100vw - 320px) / 1550);
   }
@@ -16006,7 +16093,7 @@ body {
   }
 
   .item-factory-responsibility__text {
-    font-size: calc(15px + 2 * (100vw - 320px) / 1550);
+    font-size: calc(15px + 5 * (100vw - 320px) / 1550);
   }
 
   .item-factory-responsibility__icon img {
@@ -18593,6 +18680,11 @@ body {
     margin: 0;
   }
 
+  .item-factory-about__icon {
+    max-width: 40px;
+    height: 40px;
+  }
+
   .factory-production__blocks {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -18744,6 +18836,10 @@ body {
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
+  }
+
+  .item-factory-responsibility__bottom .item-factory-responsibility__button {
+    display: none;
   }
 
   .item-factory-responsibility__icon {
@@ -23010,6 +23106,10 @@ body {
 
   .factory-advantages__image img {
     margin-right: calc(1px + 255 * (100vw - 320px) / 1550);
+  }
+
+  .item-factory-responsibility__button {
+    font-size: calc(62px + 6 * (100vw - 320px) / 1550);
   }
 
   .factory-guarantee__title {
